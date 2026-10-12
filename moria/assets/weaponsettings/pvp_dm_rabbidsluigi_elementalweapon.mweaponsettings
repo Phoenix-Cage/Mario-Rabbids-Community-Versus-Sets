@@ -1,0 +1,127 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_elementalweapon.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_elementalweapon.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_elementalweapon.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+
+ListWeaponSettings PVP_DM_RabbidsLuigi_ElementalWeapons
+{
+	WeaponSettings RabbidsLuigi_ElementalWeapon_Preset1
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_elemental_rabbidluigi_12.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsLuigi_ElementalWeapon_12
+		myWeaponCategory ElementalWeapon
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_ElementalWeapon
+		myAttackParameters < uid=8297F7EA59D4A1720000002B5FC6B33A > : AttackParameters_ElementalWeapon
+		{
+			myDamageBase 30
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20.0
+			mySuperChance 80.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Vampire
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4A1720000002C1A6A1452 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4A1720000002D949BD8CF > = BulletParameters_ElementalWeapon
+		myVersionInfoConditions < uid=8297F7EA59D4A1720000002E9F58896B > = VER_Retail
+	}
+	WeaponSettings RabbidsLuigi_ElementalWeapon_Preset2
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_elemental_rabbidluigi_03.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsLuigi_ElementalWeapon_4
+		myWeaponCategory ElementalWeapon
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_ElementalWeapon
+		myAttackParameters < uid=8297F7EA59D6320D000000E84270A24F > : AttackParameters_ElementalWeapon
+		{
+			myDamageBase 30
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20.0
+			mySuperChance 80.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Vampire
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D6320D000000E9D42D0033 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D6320D000000EAA28C199A > = BulletParameters_ElementalWeapon
+		myVersionInfoConditions < uid=8297F7EA59D6320D000000EB759CFEE8 > = VER_Retail
+	}
+	WeaponSettings RabbidsLuigi_ElementalWeapon_Preset3
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_elemental_rabbidluigi_07.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsLuigi_ElementalWeapon_5
+		myWeaponCategory ElementalWeapon
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_ElementalWeapon
+		myAttackParameters < uid=8297F7EA59D6320D000000ECB23948CE > : AttackParameters_ElementalWeapon
+		{
+			myDamageBase 30
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20.0
+			mySuperChance 80.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Burn
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D6320D000000ED0EA9EA22 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D6320D000000EECC2B62A4 > = BulletParameters_ElementalWeapon
+		myVersionInfoConditions < uid=8297F7EA59D6320D000000EF5ED2AE77 > = VER_Retail
+	}
+	WeaponSettings RabbidsLuigi_ElementalWeapon_Preset4
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_elemental_rabbidluigi_14.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsLuigi_ElementalWeapon_14
+		myWeaponCategory ElementalWeapon
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_ElementalWeapon
+		myAttackParameters < uid=8297F7EA59D6320D000000ECB23948CE > : AttackParameters_ElementalWeapon
+		{
+			myDamageBase 30
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20.0
+			mySuperChance 80.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D6320D000000ED0EA9EA22 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D6320D000000EECC2B62A4 > = BulletParameters_ElementalWeapon
+		myVersionInfoConditions < uid=8297F7EA59D6320D000000EF5ED2AE77 > = VER_Retail
+	}
+}
+

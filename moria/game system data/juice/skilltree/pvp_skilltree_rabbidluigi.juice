@@ -1,0 +1,671 @@
+include ./skilltree_slot/skilltree_slotlist.juice
+include "moria/game system data/fruit/fighter/skilltree/skilltree.fruit"
+include "moria/game system data/juice/ui/descriptors/skilltreebonus.juice"
+include "moria/game system data/juice/ui/descriptors/skilltree/skilltreemetrics.juice"
+
+Skill PVP_DM_SKL_RabbidsLuigi_Dash < uid=8297F7EA59D4A2D2000000DF8C7D3C43 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Dash
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_dash.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_TeamJump < uid=8297F7EA59D4A2D2000000E06177B88E >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJump
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_teamjump.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_Elemental < uid=8297F7EA59D4A2D2000000E16690FE4A >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Elemental
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_wpnprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_Shield < uid=8297F7EA59D4A2D2000000E214682F77 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidLuigi_Shield
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_techprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_VampireDash < uid=8297F7EA59D4A2D2000000E37192969D >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : MOVEMENT_SPECIALIZATION
+			{
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_VampireDash
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidluigi_dashvampire.dds
+	}
+	myMetric = MovementSpecialization
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_Rocket < uid=8297F7EA59D4A2D2000000E4ADFDE3E9 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : SECONDARY_WEAPON
+			{
+			}
+		}
+	}
+	myRequirements
+	{
+	}
+	myDescriptor : Descriptor_SKL_Rocket
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_wpnsec.dds
+	}
+	myMetric = SecondaryWeapon
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_Weakenizer < uid=8297F7EA59D4A2D2000000E54C7E3AB2 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus
+			{
+				mySecondaryTechniqueUnlocked TRUE
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Weakinizer
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_techsec.dds
+	}
+	myMetric = SecondaryTechnique
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_Hp < uid=8297F7EA59D4A2D2000000E61938B7DD >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Hp
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_hp.dds
+	}
+	myMetric = HP
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_Aom < uid=8297F7EA59D4A2D2000000EADF1775FC >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Aom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_aom.dds
+	}
+	myMetric = AOM
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_PipeAom < uid=8297F7EA59D4A2D2000000EE95DEC04A >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_PipeAom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_pipe.dds
+	}
+	myMetric = PipeAOM
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_DashDamage < uid=8297F7EA59D4A2D2000000F203A60978 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 30.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 30.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 20.0
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 10.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_DashDamage
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_RabbidLuigi_dashVampire.dds
+	}
+	myMetric = DashDamage
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_DashNumber < uid=8297F7EA59D4A2D2000000F46A7C47C9 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myDashNumber 0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myDashNumber 0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myDashNumber 0
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myDashNumber 0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_DashNumber
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_RabbidLuigi_dashVampire.dds
+	}
+	myMetric = DashNumber
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_DashVampireSteal < uid=8297F7EA59D4A2D2000000F6F35C63C7 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myVampireDashGain 0.4
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myVampireDashGain 0.8
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myVampireDashGain 0.2
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myVampireDashGain 0.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_VampireDashSteal
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_RabbidLuigi_dashVampire.dds
+	}
+	myMetric = VampireSteal
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_TeamJumpRadius < uid=8297F7EA59D4A2D2000000F82DC5CFD7 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_teamjump.dds
+	}
+	myMetric = TeamJumpRadius
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_TeamJumpCleanse < uid=8297F7EA59D4A2D2000000FAEF3CDA17 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : TEAMJUMP_CLEANSE
+			{
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpCleanse
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidluigi_cleans.dds
+	}
+	myMetric = TeamJumpCleanse
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_Elevation < uid=8297F7EA59D4A2D2000000FC35E7A13D >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Elevation
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidluigi_doublewpn.dds
+	}
+	myMetric = Elevation
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_Atomized < uid=8297F7EA59D4A2D2000000FEB5065FE2 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Atomizer
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidluigi_doublewpn.dds
+	}
+	myMetric = Atomized
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_ShieldWeaponDamageReduction < uid=8297F7EA59D4A2D20000010070283FA2 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.3
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.2
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.5
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidLuigi_ShieldWeaponDamageReduction
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_techprim.dds
+	}
+	myMetric = ShieldWeaponDamageReduction
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_ShieldMoveDamageReduction < uid=8297F7EA59D4A2D2000001025527D0D4 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.3
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.2
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.5
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidLuigi_ShieldMovementDamageReduction
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_techprim.dds
+	}
+	myMetric = ShieldMoveDamageReduction
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_ShieldCooldown < uid=8297F7EA59D4A2D20000010468BFB4F6 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 1
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 1
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidLuigi_ShieldCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_techprim.dds
+	}
+	myMetric = PrimaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_WeakinizerCooldown < uid=8297F7EA59D4A2D2000001061AD432B8 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 3
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 2
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 1
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidLuigi_WeakinizerCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_techsec.dds
+	}
+	myMetric = SecondaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_WeakinizerRadius < uid=8297F7EA59D4A2D2000001080CAB8AA1 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidLuigi_WeakinizerRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_techsec.dds
+	}
+	myMetric = SecondaryTechniqueRadius
+}
+
+Skill PVP_DM_SKL_RabbidsLuigi_WeakinizerIncrement < uid=8297F7EA59D4A2D20000010A31A04B1F >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myWeakinizerDamage 0.4
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myWeakinizerDamage 0.2
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myWeakinizerDamage 0.9
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myWeakinizerDamage 0.5
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidLuigi_WeakinizerIncrement
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidluigi_techsec.dds
+	}
+	myMetric = WeakinizerPercentage
+}
+
+SkillTree PVP_DM_Skilltree_RabbidLuigi
+{
+	myEXTRA
+	{
+		Skill PVP_DM_SKL_RabbidsLuigi_Hp < uid=8297F7EA59D4A2D20000010CCCAE12C2 > = PVP_DM_SKL_RabbidsLuigi_Hp
+		Skill PVP_DM_SKL_RabbidsLuigi_Aom < uid=8297F7EA59D4A2D20000010D91E10050 > = PVP_DM_SKL_RabbidsLuigi_Aom
+		Skill PVP_DM_SKL_RabbidsLuigi_PipeAom < uid=8297F7EA59D4A2D20000010EA22A59C0 > = PVP_DM_SKL_RabbidsLuigi_PipeAom
+	}
+	myMOVEMENT
+	{
+		Skill PVP_DM_SKL_RabbidsLuigi_Dash < uid=8297F7EA59D4A2D20000010F3D5ED391 > = PVP_DM_SKL_RabbidsLuigi_Dash
+		Skill PVP_DM_SKL_RabbidsLuigi_TeamJump < uid=8297F7EA59D4A2D20000011081DAEEFA > = PVP_DM_SKL_RabbidsLuigi_TeamJump
+		Skill PVP_DM_SKL_RabbidsLuigi_VampireDash < uid=8297F7EA59D4A2D20000011118A09D11 > = PVP_DM_SKL_RabbidsLuigi_VampireDash
+		Skill PVP_DM_SKL_RabbidsLuigi_DashDamage < uid=8297F7EA59D4A2D200000112E8B4239C > = PVP_DM_SKL_RabbidsLuigi_DashDamage
+		Skill PVP_DM_SKL_RabbidsLuigi_DashNumber < uid=8297F7EA59D4A2D20000011323BDA740 > = PVP_DM_SKL_RabbidsLuigi_DashNumber
+		Skill PVP_DM_SKL_RabbidsLuigi_DashVampireSteal < uid=8297F7EA59D4A2D200000114754630F3 > = PVP_DM_SKL_RabbidsLuigi_DashVampireSteal
+		Skill PVP_DM_SKL_RabbidsLuigi_TeamJumpCleanse < uid=8297F7EA59D4A2D2000001156912635F > = PVP_DM_SKL_RabbidsLuigi_TeamJumpCleanse
+		Skill PVP_DM_SKL_RabbidsLuigi_TeamJumpRadius < uid=8297F7EA59D4A2D20000011620F30522 > = PVP_DM_SKL_RabbidsLuigi_TeamJumpRadius
+	}
+	myATTACK
+	{
+		Skill PVP_DM_SKL_RabbidsLuigi_Elemental < uid=8297F7EA59D4A2D200000117EEBA21DB > = PVP_DM_SKL_RabbidsLuigi_Elemental
+		Skill PVP_DM_SKL_RabbidsLuigi_Rocket < uid=8297F7EA59D4A2D200000118AA3F5557 > = PVP_DM_SKL_RabbidsLuigi_Rocket
+		Skill PVP_DM_SKL_RabbidsLuigi_Elevation < uid=8297F7EA59D4A2D20000011950CDD3D4 > = PVP_DM_SKL_RabbidsLuigi_Elevation
+		Skill PVP_DM_SKL_RabbidsLuigi_Atomized < uid=8297F7EA59D4A2D20000011AE8AF16FA > = PVP_DM_SKL_RabbidsLuigi_Atomized
+	}
+	myTECHNIQUE
+	{
+		Skill PVP_DM_SKL_RabbidsLuigi_Shield < uid=8297F7EA59D4A2D20000011BD72446CD > = PVP_DM_SKL_RabbidsLuigi_Shield
+		Skill PVP_DM_SKL_RabbidsLuigi_Weakenizer < uid=8297F7EA59D4A2D20000011C87E12493 > = PVP_DM_SKL_RabbidsLuigi_Weakenizer
+		Skill PVP_DM_SKL_RabbidsLuigi_ShieldWeaponDamageReduction < uid=8297F7EA59D4A2D20000011DB98C14C8 > = PVP_DM_SKL_RabbidsLuigi_ShieldWeaponDamageReduction
+		Skill PVP_DM_SKL_RabbidsLuigi_ShieldMoveDamageReduction < uid=8297F7EA59D4A2D20000011E2904DDC5 > = PVP_DM_SKL_RabbidsLuigi_ShieldMoveDamageReduction
+		Skill PVP_DM_SKL_RabbidsLuigi_ShieldCooldown < uid=8297F7EA59D4A2D20000011FDCE3E406 > = PVP_DM_SKL_RabbidsLuigi_ShieldCooldown
+		Skill PVP_DM_SKL_RabbidsLuigi_WeakinizerCooldown < uid=8297F7EA59D4A2D20000012052A886B5 > = PVP_DM_SKL_RabbidsLuigi_WeakinizerCooldown
+		Skill PVP_DM_SKL_RabbidsLuigi_WeakinizerRadius < uid=8297F7EA59D4A2D2000001218B5BF27C > = PVP_DM_SKL_RabbidsLuigi_WeakinizerRadius
+		Skill PVP_DM_SKL_RabbidsLuigi_WeakinizerIncrement < uid=8297F7EA59D4A2D20000012284BEFC27 > = PVP_DM_SKL_RabbidsLuigi_WeakinizerIncrement
+	}
+	myUseCumulativeSkillBonus FALSE
+}
+
