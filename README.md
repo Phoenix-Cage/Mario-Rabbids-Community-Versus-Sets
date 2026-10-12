@@ -18,7 +18,7 @@ In an emulator, right click on Mario + Rabbids Kingdom Battle and select “Open
 On your modded Switch’s SD card, you need to place it within atmosphere/contents/010067300059A000
 In both cases, this would allow the modified sdfdata file to overwrite the original! 
 
-
+----------------
 
 How to contribute:
 
