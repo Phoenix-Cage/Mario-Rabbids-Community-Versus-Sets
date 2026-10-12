@@ -23,5 +23,5 @@ In both cases, this would allow the modified sdfdata file to overwrite the origi
 How to contribute:
 
 1. Download the file you want to modify from here (this is to ensure that compatibility with the rest of the mod)
-2. Follow the "How to make custom versus sets" text file for directions on how to modify what you want to do
-3. Make a pull request with your modified file
+2. Follow the [wiki](https://github.com/gggga00/Mario-Rabbids-Community-Versus-Sets/wiki) for directions on how to add/modify versus sets
+3. Make a pull request with your modified files
