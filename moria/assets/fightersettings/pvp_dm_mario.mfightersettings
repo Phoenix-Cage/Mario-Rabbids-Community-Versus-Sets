@@ -1,0 +1,22 @@
+include ./mario.mfightersettings
+include "moria/game system data/juice/movesettings/pvp_moveabilities_mario.juice"
+include "moria/game system data/juice/fighter/params/pvp_ranksparameters_mario.juice"
+include moria/assets/weaponsettings/pvp_dm_mario_lightguns.mweaponsettings
+include "moria/game system data/juice/techniquesettings/pvp_mario_react.juice"
+include moria/assets/weaponsettings/pvp_dm_mario_meleeweapons.mweaponsettings
+include "moria/game system data/juice/techniquesettings/pvp_mario_empower.juice"
+include "moria/game system data/juice/skilltree/pvp_skilltree_mario.juice"
+
+FighterSettings PVP_DM_Mario : Mario
+{
+	myRanks = PVP_DM_Ranks_Mario
+	myMoveAbilitiesSettings = PVP_DM_MoveAbilities_Mario
+	myPrimaryWeaponList = PVP_DM_Mario_Lightguns
+	mySecondaryWeaponList = PVP_DM_Mario_MeleeWeapons
+	myPrimaryTechnique = PVP_DM_Mario_React
+	mySecondaryTechnique = PVP_DM_Mario_Empower
+	myPositioningConditions < uid=D6AA72575A04224600000020A3F9E453 > = Positioning_PVP_DM
+	myUISettings = UI_PVP_DM_Mario
+	mySkillTree = PVP_DM_Skilltree_Mario
+}
+

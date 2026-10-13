@@ -1,0 +1,50 @@
+include "moria/game system data/fruit/movesettings/movesettings.fruit"
+include ./params/moveabilitiesparameters_rabbidsmario.juice
+include "moria/game system data/juice/ui/descriptors/moveabilitiesdescriptors.juice"
+
+MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters < uid=8297F7EA59D4ADFF0000013B5BB76478 >
+{
+	myUsePipes TRUE
+	myUseSlide TRUE
+	myUseBarrel TRUE
+	myAom 13
+	myPipeAom 7
+	myIsDashable TRUE
+	myCanDash TRUE
+	myCanExplosiveDash TRUE
+	myDashNumber 1
+	myExplosiveDashDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, 0 -0.0493832, -0.666667 0.05, }, outTangents = { 0.137076 -0.117284, 0.196258 -0.216049, 0.543724 -0.0617994, }, properties = { 331, 2387, 1355, }, values = { 0 1, 1 0.85, 3 0.7, }, }, numKeys = 3, }"
+	myCanAssistJump TRUE
+	myIsStompable TRUE
+	myCanTeamJump TRUE
+	myTeamJumpNumber 1
+	myTeamJumpRadius 13
+	myNoSelfDamage TRUE
+	myNoCoverDamage TRUE
+}
+
+ListMoveAbilitiesSettings PVP_DM_MoveAbilities_RabbidsMario
+{
+	MoveAbilitiesSettings MoveAbilities_Preset1 < uid=8297F7EA59D4AC99000001331E8C9E38 >
+	{
+		myMoveAbilityCategory ExplosiveDash
+		mySpecializationType Dash
+		myDescriptor = Descriptor_ExplosiveDash
+		myMoveAbilitiesParameters < uid=8297F7EA59D4AC99000001344D7B8878 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset2 < uid=8297F7EA59DC87D4000000154F02B1F9 >
+	{
+		myMoveAbilityCategory ExplosiveDash
+		mySpecializationType Dash
+		myDescriptor = Descriptor_ExplosiveDash
+		myMoveAbilitiesParameters < uid=8297F7EA59DC87D4000000163CAF5398 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset3 < uid=8297F7EA59DC87D4000000178F8F24AE >
+	{
+		myMoveAbilityCategory ExplosiveDash
+		mySpecializationType Dash
+		myDescriptor = Descriptor_ExplosiveDash
+		myMoveAbilitiesParameters < uid=8297F7EA59DC87D400000018409721CD > = PVP_DM_MoveAbilitiesParameters
+	}
+}
+

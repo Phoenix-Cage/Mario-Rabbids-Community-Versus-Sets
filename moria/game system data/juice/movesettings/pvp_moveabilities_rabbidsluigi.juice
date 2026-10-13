@@ -19,11 +19,13 @@ MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters < uid=8297F7EA59D49CAB000
 	myCanTeamJump TRUE
 	myTeamJumpNumber 1
 	myTeamJumpRadius 13
+	myDashSideEffectType Vampire
 }
 
-MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters4 < uid=8297F7EA59D49CAB00000024D3011EDA > : PVP_DM_MoveAbilitiesParameters
+MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters_Invader < uid=8297F7EA59D49CAB00000024D3011EDA > : PVP_DM_MoveAbilitiesParameters
 {
 	myDashSideEffectType Vampire
+	myVampireDashGain "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, -0.333333 -0, }, outTangents = { 0.333333 0, 0 0, }, properties = { 203, 1227, }, values = { 0 0, 1 0, }, }, numKeys = 2, }"
 	myCanQuake TRUE
 	myQuakeRadius 7.0
 	myQuakeDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, -0.333333 -0, }, outTangents = { 0.333333 0, 0 0, }, properties = { 203, 1227, }, values = { 0 1, 1 1, }, }, numKeys = 2, }"
@@ -58,7 +60,7 @@ ListMoveAbilitiesSettings PVP_DM_MoveAbilities_RabbidsLuigi
 		myMoveAbilityCategory VampireDash
 		mySpecializationType Dash
 		myDescriptor = Descriptor_VampireDash
-		myMoveAbilitiesParameters < uid=8297F7EA59D49CDA000000287A87EDD5 > = PVP_DM_MoveAbilitiesParameters4
+		myMoveAbilitiesParameters < uid=8297F7EA59D49CDA000000287A87EDD5 > = PVP_DM_MoveAbilitiesParameters_Invader
 	}
 }
 

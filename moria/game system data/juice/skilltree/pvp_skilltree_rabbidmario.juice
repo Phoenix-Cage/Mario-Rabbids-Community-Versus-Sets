@@ -1,0 +1,589 @@
+include ./skilltree_slot/skilltree_slotlist.juice
+include "moria/game system data/fruit/fighter/skilltree/skilltree.fruit"
+include "moria/game system data/juice/ui/descriptors/skilltreebonus.juice"
+include "moria/game system data/juice/ui/descriptors/skilltree/skilltreemetrics.juice"
+
+Skill PVP_DM_SKL_RabbidsMario_Dash < uid=8297F7EA59D4B2B3000001DA84D150E6 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Dash
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_dash.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsMario_TeamJump < uid=8297F7EA59D4B2B3000001DB831B1EB3 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJump
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_teamjump.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsMario_Shotgun < uid=8297F7EA59D4B2B3000001DC74EF0C45 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Shotgun
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_wpnprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsMario_Shield < uid=8297F7EA59D4B2B3000001DD17B0BF61 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidMario_Shield
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_techprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsMario_ExplosiveDash < uid=8297F7EA59D4B2B3000001DE19E88B11 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : MOVEMENT_SPECIALIZATION
+			{
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myDescriptor : Descriptor_SKL_ExplosiveDash
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_RabbidMario_DashExplosive.dds
+	}
+	myMetric = MovementSpecialization
+}
+
+Skill PVP_DM_SKL_RabbidsMario_Melee < uid=8297F7EA59D4B2B3000001DF425DE019 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : SECONDARY_WEAPON
+			{
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myRequirements
+	{
+	}
+	myDescriptor : Descriptor_SKL_Melee
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_wpnsec.dds
+	}
+	myMetric = SecondaryWeapon
+}
+
+Skill PVP_DM_SKL_RabbidsMario_MagnetDance < uid=8297F7EA59D4B2B3000001E04EDC4133 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus
+			{
+				mySecondaryTechniqueUnlocked TRUE
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myDescriptor : Descriptor_SKL_MagnetDance
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_techsec.dds
+	}
+	myMetric = SecondaryTechnique
+}
+
+Skill PVP_DM_SKL_RabbidsMario_Hp < uid=8297F7EA59D4B2B3000001E1DC05B43E >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Hp
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_hp.dds
+	}
+	myMetric = HP
+}
+
+Skill PVP_DM_SKL_RabbidsMario_Aom < uid=8297F7EA59D4B2B3000001E5713480BF >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Aom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_aom.dds
+	}
+	myMetric = AOM
+}
+
+Skill PVP_DM_SKL_RabbidsMario_PipeAom < uid=8297F7EA59D4B2B3000001E9014AC2D4 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_PipeAom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_pipe.dds
+	}
+	myMetric = PipeAOM
+}
+
+Skill PVP_DM_SKL_RabbidsMario_DashDamage < uid=8297F7EA59D4B2B3000001EDCC1503F7 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 30
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 40
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 20
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_DashDamage
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_RabbidMario_DashExplosive.dds
+	}
+	myMetric = DashDamage
+}
+
+Skill PVP_DM_SKL_RabbidsMario_DashNumber < uid=8297F7EA59D4B2B3000001EF9F0E2F56 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myDashNumber 0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myDashNumber 0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myDashNumber 0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_DashNumber
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_RabbidMario_DashExplosive.dds
+	}
+	myMetric = DashNumber
+}
+
+Skill PVP_DM_SKL_RabbidsMario_ExplosiveDashRadius < uid=8297F7EA59D4B2B3000001F19165C246 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myExplosiveDashRadius 5
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myExplosiveDashRadius 11
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myExplosiveDashRadius 5
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_ExplosiveDashRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_RabbidMario_DashExplosive.dds
+	}
+	myMetric = ExplosiveDashRadius
+}
+
+Skill PVP_DM_SKL_RabbidsMario_TeamJumpRadius < uid=8297F7EA59D4B2B3000001F3C1CE8B6A >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_teamjump.dds
+	}
+	myMetric = TeamJumpRadius
+}
+
+Skill PVP_DM_SKL_RabbidsMario_TeamJumpCleanse < uid=8297F7EA59D4B2B3000001F5D0CE4899 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : TEAMJUMP_CLEANSE
+			{
+			}
+			myCost 10
+			myPriority 4
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpCleanse
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidmario_cleans.dds
+	}
+	myMetric = TeamJumpCleanse
+}
+
+Skill PVP_DM_SKL_RabbidsMario_Elevation < uid=8297F7EA59D4B2B3000001F7E91C44D2 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Elevation
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_wpnprim.dds
+	}
+	myMetric = Elevation
+}
+
+Skill PVP_DM_SKL_RabbidsMario_Atomized < uid=8297F7EA59D4B2B3000001F9126DED85 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Atomizer
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidmario_doublewpn.dds
+	}
+	myMetric = Atomized
+}
+
+Skill PVP_DM_SKL_RabbidsMario_ShieldWeaponDamageReduction < uid=8297F7EA59D4B2B3000001FBA5D306D7 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.1
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.4
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidMario_ShieldWeaponDamageReduction
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_techprim.dds
+	}
+	myMetric = ShieldWeaponDamageReduction
+}
+
+Skill PVP_DM_SKL_RabbidsMario_ShieldMoveDamageReduction < uid=8297F7EA59D4B2B3000001FD47F949B8 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.6
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.4
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 1
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidMario_ShieldMovementDamageReduction
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_techprim.dds
+	}
+	myMetric = ShieldMoveDamageReduction
+}
+
+Skill PVP_DM_SKL_RabbidsMario_ShieldCooldown < uid=8297F7EA59D4B2B3000001FFC3929A7F >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 1
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 1
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidMario_ShieldCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_techprim.dds
+	}
+	myMetric = PrimaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_RabbidsMario_MagnetDanceCooldown < uid=8297F7EA59D4B2B300000201586DBFF4 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 1
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 3
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidMario_MagnetDanceCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_techsec.dds
+	}
+	myMetric = SecondaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_RabbidsMario_MagnetDanceRadius < uid=8297F7EA59D4B2B300000203A76F1312 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidMario_MagnetDanceRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidmario_techsec.dds
+	}
+	myMetric = SecondaryTechniqueRadius
+}
+
+SkillTree PVP_DM_Skilltree_RabbidMario
+{
+	myEXTRA
+	{
+		Skill PVP_DM_SKL_RabbidsMario_Hp < uid=8297F7EA59D4B2B300000205E32EE74A > = PVP_DM_SKL_RabbidsMario_Hp
+		Skill PVP_DM_SKL_RabbidsMario_Aom < uid=8297F7EA59D4B2B300000206DA1EDC01 > = PVP_DM_SKL_RabbidsMario_Aom
+		Skill PVP_DM_SKL_RabbidsMario_PipeAom < uid=8297F7EA59D4B2B3000002070536B3D3 > = PVP_DM_SKL_RabbidsMario_PipeAom
+	}
+	myMOVEMENT
+	{
+		Skill PVP_DM_SKL_RabbidsMario_Dash < uid=8297F7EA59D4B2B30000020898A149F5 > = PVP_DM_SKL_RabbidsMario_Dash
+		Skill PVP_DM_SKL_RabbidsMario_TeamJump < uid=8297F7EA59D4B2B3000002090C21F91C > = PVP_DM_SKL_RabbidsMario_TeamJump
+		Skill PVP_DM_SKL_RabbidsMario_ExplosiveDash < uid=8297F7EA59D4B2B30000020A20F3D24D > = PVP_DM_SKL_RabbidsMario_ExplosiveDash
+		Skill PVP_DM_SKL_RabbidsMario_DashDamage < uid=8297F7EA59D4B2B30000020B90EB55AB > = PVP_DM_SKL_RabbidsMario_DashDamage
+		Skill PVP_DM_SKL_RabbidsMario_DashNumber < uid=8297F7EA59D4B2B30000020C029748A2 > = PVP_DM_SKL_RabbidsMario_DashNumber
+		Skill PVP_DM_SKL_RabbidsMario_ExplosiveDashRadius < uid=8297F7EA59D4B2B30000020D017DB8F5 > = PVP_DM_SKL_RabbidsMario_ExplosiveDashRadius
+		Skill PVP_DM_SKL_RabbidsMario_TeamJumpRadius < uid=8297F7EA59D4B2B30000020EBFA2632D > = PVP_DM_SKL_RabbidsMario_TeamJumpRadius
+		Skill PVP_DM_SKL_RabbidsMario_TeamJumpCleanse < uid=8297F7EA59D4B2B30000020F752E3F7F > = PVP_DM_SKL_RabbidsMario_TeamJumpCleanse
+	}
+	myATTACK
+	{
+		Skill PVP_DM_SKL_RabbidsMario_Shotgun < uid=8297F7EA59D4B2B300000210CD44BB20 > = PVP_DM_SKL_RabbidsMario_Shotgun
+		Skill PVP_DM_SKL_RabbidsMario_Deployable < uid=8297F7EA59D4B2B3000002112112086D > = PVP_DM_SKL_RabbidsMario_Melee
+		Skill PVP_DM_SKL_RabbidsMario_Elevation < uid=8297F7EA59D4B2B3000002128D05BC69 > = PVP_DM_SKL_RabbidsMario_Elevation
+		Skill PVP_DM_SKL_RabbidsMario_Atomized < uid=8297F7EA59D4B2B30000021389D4BF71 > = PVP_DM_SKL_RabbidsMario_Atomized
+	}
+	myTECHNIQUE
+	{
+		Skill PVP_DM_SKL_RabbidsMario_Shield < uid=8297F7EA59D4B2B30000021461A188D0 > = PVP_DM_SKL_RabbidsMario_Shield
+		Skill PVP_DM_SKL_RabbidsMario_MagnetDance < uid=8297F7EA59D4B2B300000215D041B5E9 > = PVP_DM_SKL_RabbidsMario_MagnetDance
+		Skill PVP_DM_SKL_RabbidsMario_ShieldWeaponDamageReduction < uid=8297F7EA59D4B2B3000002167007BD7C > = PVP_DM_SKL_RabbidsMario_ShieldWeaponDamageReduction
+		Skill PVP_DM_SKL_RabbidsMario_ShieldMoveDamageReduction < uid=8297F7EA59D4B2B3000002175C04AB3A > = PVP_DM_SKL_RabbidsMario_ShieldMoveDamageReduction
+		Skill PVP_DM_SKL_RabbidsMario_ShieldCooldown < uid=8297F7EA59D4B2B300000218318E4F62 > = PVP_DM_SKL_RabbidsMario_ShieldCooldown
+		Skill PVP_DM_SKL_RabbidsMario_MagnetDanceCooldown < uid=8297F7EA59D4B2B300000219ECBD5A47 > = PVP_DM_SKL_RabbidsMario_MagnetDanceCooldown
+		Skill PVP_DM_SKL_RabbidsMario_MagnetDanceRadius < uid=8297F7EA59D4B2B30000021AA11CF6F1 > = PVP_DM_SKL_RabbidsMario_MagnetDanceRadius
+	}
+	myUseCumulativeSkillBonus FALSE
+}
+

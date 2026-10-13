@@ -1,0 +1,34 @@
+include ./pvp_dm_luigi_deployables.mweaponsettings
+
+ListWeaponSettings PVP_DM_Deployable_Weapons_Luigi
+{
+	WeaponSettings Deployable_1 : PVP_DM_Luigi_Deployable_1
+	{
+		myWeaponCategory DeployableDynamite
+	}
+	WeaponSettings Deployable_2 : PVP_DM_Luigi_Deployable_2
+	{
+		myWeaponCategory DeployableDynamite
+	}
+	WeaponSettings Deployable_3 : PVP_DM_Luigi_Deployable_3
+	{
+		myWeaponCategory DeployableDynamite
+	}
+	WeaponSettings Deployable_4 : PVP_DM_Luigi_Deployable_4
+	{
+		myWeaponCategory DeployableDynamite
+	}
+	WeaponSettings Deployable_5 : PVP_DM_Luigi_Deployable_5
+	{
+		myWeaponCategory DeployableDynamite
+	}
+	WeaponSettings Deployable_6 : PVP_DM_Luigi_Deployable_6
+	{
+		myWeaponCategory DeployableDynamite
+	}
+	WeaponSettings Deployable_6 : PVP_DM_Luigi_Deployable_TechDemo
+	{
+		myWeaponCategory DeployableDynamite
+	}
+}
+

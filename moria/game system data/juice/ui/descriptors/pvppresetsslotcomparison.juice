@@ -78,7 +78,7 @@ InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsLuigi_Preset3
 	ComparisonValue SECONDARYTECHNIQUE Better
 }
 
-InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsLuigi_Preset4
+InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsLuigi_Preset_Invader
 {
 	ComparisonValue HP Same
 	ComparisonValue DASH Worst
@@ -130,6 +130,19 @@ InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsPeach_Preset3
 	ComparisonValue SECONDARYTECHNIQUE Worst
 }
 
+InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsPeach_Preset7
+{
+	ComparisonValue HP Same
+	ComparisonValue DASH Better
+	ComparisonValue TEAMJUMP Same
+	ComparisonValue PRIMARYWEAPON Same
+	ComparisonValue SECONDARYWEAPON Same
+	ComparisonValue PRIMARYWEAPONSIDEEFFECT Same
+	ComparisonValue SECONDARYWEAPONSIDEEFFECT Same
+	ComparisonValue PRIMARYTECHNIQUE Better
+	ComparisonValue SECONDARYTECHNIQUE Worst
+}
+
 InfoCardSlotComparisonList ComparisonList_PVP_DM_Luigi_Preset1
 {
 	ComparisonValue HP Same
@@ -165,6 +178,19 @@ InfoCardSlotComparisonList ComparisonList_PVP_DM_Luigi_Preset3
 	ComparisonValue SECONDARYWEAPON Same
 	ComparisonValue PRIMARYWEAPONSIDEEFFECT Worst
 	ComparisonValue SECONDARYWEAPONSIDEEFFECT Worst
+	ComparisonValue PRIMARYTECHNIQUE Better
+	ComparisonValue SECONDARYTECHNIQUE Better
+}
+
+InfoCardSlotComparisonList ComparisonList_PVP_DM_Luigi_Preset_TechDemo
+{
+	ComparisonValue HP Better
+	ComparisonValue DASH Better
+	ComparisonValue TEAMJUMP Better
+	ComparisonValue PRIMARYWEAPON Better
+	ComparisonValue SECONDARYWEAPON Better
+	ComparisonValue PRIMARYWEAPONSIDEEFFECT Better
+	ComparisonValue SECONDARYWEAPONSIDEEFFECT Better
 	ComparisonValue PRIMARYTECHNIQUE Better
 	ComparisonValue SECONDARYTECHNIQUE Better
 }

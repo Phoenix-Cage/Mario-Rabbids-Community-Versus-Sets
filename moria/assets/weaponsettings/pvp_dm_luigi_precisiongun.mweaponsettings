@@ -1,0 +1,217 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_precisiongun.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_precisiongun.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_powergun.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_powergun.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_precisiongun.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+
+ListWeaponSettings PVP_DM_Luigi_PrecisionGuns
+{
+	WeaponSettings Luigi_PrecisionGun_Preset1
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_precisiongun_luigi_15.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Luigi_Precision_15
+		myWeaponCategory PrecisionGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Precisiongun
+		myAttackParameters < uid=8297F7EA59D4F072000004C80148F14B > : AttackParameters_PrecisionGun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Ink
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4F072000004C92B1638F1 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4F072000004CAD2B40F62 > = BulletParameters_PrecisionGun
+		myVersionInfoConditions < uid=8297F7EA59D4F072000004CB45FEE941 > = VER_Retail
+	}
+	WeaponSettings Luigi_PrecisionGun_Preset2
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_precisiongun_luigi_06.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Luigi_Precision_6
+		myWeaponCategory PrecisionGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Precisiongun
+		myAttackParameters < uid=8297F7EA59D63FA70000001B049473E1 > : AttackParameters_PrecisionGun
+		{
+			myDamageBase 60
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20.0
+			mySuperChance 80.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Ink
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D63FA70000001C9346C3A2 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D63FA70000001D645AFC91 > = BulletParameters_PrecisionGun
+		myVersionInfoConditions < uid=8297F7EA59D63FA70000001E2A7CE800 > = VER_Retail
+	}
+	WeaponSettings Luigi_PrecisionGun_Preset3
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_precisiongun_luigi_04.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Luigi_Precision_5
+		myWeaponCategory PrecisionGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Precisiongun
+		myAttackParameters < uid=8297F7EA59D63FA70000001F8DD09DD5 > : AttackParameters_PrecisionGun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 70.0
+			mySuperChance 30.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Bounce
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D63FA700000020282E041E > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D63FA7000000219B23CBFE > = BulletParameters_PrecisionGun
+		myVersionInfoConditions < uid=8297F7EA59D63FA70000002256D20C72 > = VER_Retail
+	}
+	WeaponSettings Luigi_PrecisionGun_Preset4
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_precisiongun_luigi_15.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Luigi_Precision_15
+		myWeaponCategory PrecisionGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Precisiongun
+		myAttackParameters < uid=8297F7EA59D4F072000004C80148F14B > : AttackParameters_PrecisionGun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Ink
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4F072000004C92B1638F1 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4F072000004CAD2B40F62 > = BulletParameters_PrecisionGun
+		myVersionInfoConditions < uid=8297F7EA59D4F072000004CB45FEE941 > = VER_Retail
+	}
+	WeaponSettings Luigi_PrecisionGun_Preset5
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_precisiongun_luigi_06.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Luigi_Precision_6
+		myWeaponCategory PrecisionGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Precisiongun
+		myAttackParameters < uid=8297F7EA59D63FA70000001B049473E1 > : AttackParameters_PrecisionGun
+		{
+			myDamageBase 60
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20.0
+			mySuperChance 80.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Ink
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D63FA70000001C9346C3A2 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D63FA70000001D645AFC91 > = BulletParameters_PrecisionGun
+		myVersionInfoConditions < uid=8297F7EA59D63FA70000001E2A7CE800 > = VER_Retail
+	}
+	WeaponSettings Luigi_PrecisionGun_Preset6
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_precisiongun_luigi_04.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Luigi_Precision_5
+		myWeaponCategory PrecisionGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Precisiongun
+		myAttackParameters < uid=8297F7EA59D63FA70000001F8DD09DD5 > : AttackParameters_PrecisionGun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 70.0
+			mySuperChance 30.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Bounce
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D63FA700000020282E041E > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D63FA7000000219B23CBFE > = BulletParameters_PrecisionGun
+		myVersionInfoConditions < uid=8297F7EA59D63FA70000002256D20C72 > = VER_Retail
+	}
+
+	WeaponSettings Luigi_PrecisionGun_Preset7
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_precisiongun_luigi_19.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Luigi_Precision_19
+		myWeaponCategory PrecisionGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Powergun
+		myAttackParameters < uid=8297F7EA59D63FA70000001F8DD09DD5 > : AttackParameters_PowerGun
+		{
+			myDamageBase 50
+			myDamageMin -15
+			myDamageMax 15
+			myHitChance 65.0
+			mySuperChance 35.0
+			mySuperDamageMod 1.0
+			myCoverDamage 0.0
+			myTargetingRangeMin 11.0
+			myTargetingRangeMax 41.0
+		}
+		myBonus1 = SideEffect_Honey
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D63FA700000020282E041E > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D63FA7000000219B23CBFE > = BulletParameters_Powergun
+		myVersionInfoConditions < uid=8297F7EA59D63FA70000002256D20C72 > = VER_Retail
+	}
+}
+

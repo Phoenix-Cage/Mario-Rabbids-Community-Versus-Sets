@@ -1,0 +1,48 @@
+include ./params/moveabilitiesparameters_rabbidspeach.juice
+include "moria/game system data/fruit/movesettings/movesettings.fruit"
+include "moria/game system data/juice/ui/descriptors/moveabilitiesdescriptors.juice"
+
+MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters < uid=8297F7EA59D4F5C20000057CEF8FFD31 >
+{
+	myUsePipes TRUE
+	myUseSlide TRUE
+	myUseBarrel TRUE
+	myAom 13
+	myPipeAom 7
+	myIsDashable TRUE
+	myCanDash TRUE
+	myDashNumber 1
+	myExplosiveDashDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+	myCanAssistJump TRUE
+	myIsStompable TRUE
+	myCanTeamJump TRUE
+	myTeamJumpNumber 1
+	myTeamJumpRadius 13
+	myQuakeDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+}
+
+ListMoveAbilitiesSettings PVP_DM_MoveAbilities_RabbidsPeach
+{
+	MoveAbilitiesSettings MoveAbilities_Preset1 < uid=8297F7EA59D4F53E000005745A156997 >
+	{
+		myMoveAbilityCategory DoubleDash
+		mySpecializationType Dash
+		myDescriptor = Descriptor_DoubleDash
+		myMoveAbilitiesParameters < uid=8297F7EA59D4F53E00000575C035969C > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset2 < uid=8297F7EA59DC87A20000001122B91B92 >
+	{
+		myMoveAbilityCategory DoubleDash
+		mySpecializationType Dash
+		myDescriptor = Descriptor_DoubleDash
+		myMoveAbilitiesParameters < uid=8297F7EA59DC87A200000012EF7395B4 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset3 < uid=8297F7EA59DC87A200000013FC89E340 >
+	{
+		myMoveAbilityCategory DoubleDash
+		mySpecializationType Dash
+		myDescriptor = Descriptor_DoubleDash
+		myMoveAbilitiesParameters < uid=8297F7EA59DC87A200000014A58D4B51 > = PVP_DM_MoveAbilitiesParameters
+	}
+}
+

@@ -289,9 +289,38 @@ Skill PVP_DM_SKL_RabbidsLuigi_DashVampireSteal < uid=8297F7EA59D4A2D2000000F6F35
 		{
 			myBonus
 			{
+				myVampireDashGain 0.4
+			}
+		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myVampireDashGain 0.8
+			}
+		}
+		Step Preset6
+		{
+			myBonus
+			{
+				myVampireDashGain 0.2
+			}
+		}
+		Step Preset7
+		{
+			myBonus
+			{
+				myVampireDashGain 1.0
+			}
+		}
+		Step Preset8
+		{
+			myBonus
+			{
 				myVampireDashGain 0.0
 			}
 		}
+
 	}
 	myDescriptor : Descriptor_SKL_VampireDashSteal
 	{

@@ -1,0 +1,99 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_shotgun.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_shotgun.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_shotgun.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+
+ListWeaponSettings PVP_DM_RabbidsMario_Shotgun
+{
+	WeaponSettings RabbidsMario_Shotgun_Preset1
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_rabbidmario_03.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsMario_Shotgun_4
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D4AF5A000001402BE5F52E > : AttackParameters_Shotgun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Vampire
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4AF5A00000141A4F5A80A > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4AF5A00000142E87EA1C1 > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D4AF5A00000143E5979867 > = VER_Retail
+	}
+	WeaponSettings RabbidsMario_Shotgun_Preset2
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_rabbidmario_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsMario_Shotgun_2
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D643990000002BCD5723F1 > : AttackParameters_Shotgun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Vampire
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D643990000002C062B8A3E > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D643990000002D284A6DEE > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D643990000002EB0AAC21D > = VER_Retail
+	}
+	WeaponSettings RabbidsMario_Shotgun_Preset3
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_rabbidmario_09.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsMario_Shotgun_7
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D643990000002FC4963752 > : AttackParameters_Shotgun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 70.0
+			mySuperChance 30.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Stone
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64399000000309EB62F84 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D6439900000031E5E804A1 > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D643990000003203B4882B > = VER_Retail
+	}
+}
+

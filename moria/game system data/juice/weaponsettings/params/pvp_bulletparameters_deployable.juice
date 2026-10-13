@@ -1,0 +1,40 @@
+include "moria/game system data/fruit/weaponsettings/params/bulletparameters.fruit"
+
+BulletParameters_Deployable PVP_DM_BulletParameters_Deployable < uid=8297F7EA59D5EBDC00000059EAD7648D >
+{
+	myRadius 0.01
+	myTimeUp 0.01
+	myMaxSpeed 100.0
+	mySpeedCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, -0.333333 -0, }, outTangents = { 0.333333 0, 0 0, }, properties = { 203, 2248, }, values = { 0 1, 1 1, }, }, numKeys = 2, }"
+	myDeployableFighterName ""
+	myAlliesCanTriggerTheExplosion FALSE
+	myAttackerCanTriggerTheExplosion FALSE
+	mySistersDeployablesCanTriggerTheExplosion FALSE
+	myCanTriggerTheExplosionWhenMoving FALSE
+	myMaxNumberOfLivingDeployables 3
+	myTriggeringSphereOpeningTimeInSecs 0.3
+	myTriggeringSphereRedColorDurationInSecs 0.7
+	myTriggeringSphereGraphObjectPath "moria/graph objects/effect/fx_deployabledetectionarea.mgraphobject"
+	myEndOfPathMarkerGraphObjectPath "moria/graph objects/effect/ui_deployable_explodepoint_fx.mgraphobject"
+	myFinalDestinationMarkerGraphObjectPath "moria/graph objects/prop/UI_Deployable_ExplodePoint_End.mgraphobject"
+}
+
+BulletParameters_Deployable PVP_DM_BulletParameters_Deployable_Luigi < uid=8297F7EA59D5EBDC0000005AE8B4E182 > : PVP_DM_BulletParameters_Deployable
+{
+	myDeployableFighterName PVP_DM_DeployableFighter_Luigi
+}
+
+BulletParameters_Deployable PVP_DM_BulletParameters_Deployable_Luigi_TechDemo < uid=8297F7EA59D5EBDC0000005AE8B4E182 > : PVP_DM_BulletParameters_Deployable
+{
+	myDeployableFighterName PVP_DM_DeployableFighter_Luigi
+	myMaxNumberOfLivingDeployables 10
+	myAlliesCanTriggerTheExplosion TRUE
+	mySistersDeployablesCanTriggerTheExplosion TRUE
+	myADeployableExplodesWhenTheAttackerDies FALSE
+}
+
+BulletParameters_Deployable PVP_DM_BulletParameters_Deployable_RabbidsPeach < uid=8297F7EA59D5EBDC0000005B714E7F4B > : PVP_DM_BulletParameters_Deployable
+{
+	myDeployableFighterName PVP_DM_DeployableFighter_RabbidsPeach
+}
+
