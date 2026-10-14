@@ -2,7 +2,7 @@
 
 A community-made mod for **Mario + Rabbids Kingdom Battle** that lets us create, share, and play custom versus sets!
 
-You don't need programming experience to contribute. If you have ideas for new sets or want to improve existing ones, you're welcome to help!
+You don't need any programming knowledge to contribute. If you have ideas for new sets or want to improve existing ones, you're welcome to help!
 
 
 ## How to make custom Versus sets
