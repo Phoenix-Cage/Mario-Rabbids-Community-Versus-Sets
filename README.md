@@ -24,6 +24,6 @@ In both cases, this would allow the modified sdfdata file to overwrite the origi
 
 How to contribute:
 
-1. Download the file you want to modify from here (this is to ensure that compatibility with the rest of the mod)
+1. Download the file you want to modify from here (this is to ensure that compatibility with the rest of the mod). There is also a "fork" button on this page that you can use to "copy" the github page to your own account, where you can modify everything to your hearts content. 
 2. Follow the [wiki](https://github.com/gggga00/Mario-Rabbids-Community-Versus-Sets/wiki) for directions on how to add/modify versus sets
 3. Make a pull request with your modified files. Here is an explanation on how to make a pull requests: https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request
