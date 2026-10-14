@@ -8,7 +8,7 @@ How to play the mod:
   
 3. Use this repacker: [https://github.com/gggga00/mrkb-romFS-repacker](https://github.com/gggga00/Mario-Rabbids-Reimportation-Tool) and your sdfdata files to reimport the folder into its sdfdata structure.
 
-You will need the your own extracted sdf.toc and the sdfdata files A-0016, A-0018.
+You will need your own extracted sdf.toc and the sdfdata files A-0016, A-0018.
   
 4. Put the modified sdfdata files (keeping the same name as the original) into the romFs folder in a modded switch or emulator.
 
