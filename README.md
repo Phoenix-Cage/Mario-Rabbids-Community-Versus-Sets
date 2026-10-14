@@ -30,4 +30,4 @@ There is a "Fork" button on this page that you can use to 'copy' the github page
 
 2. Follow the [wiki](https://github.com/gggga00/Mario-Rabbids-Community-Versus-Sets/wiki) for directions on how to add/modify versus sets
 
-3. Make a pull request with your modified files. Here is an explanation on how to make a pull requests: https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request
+3. Make a pull request with your modified files. Here is an explanation on how to make pull requests: https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request
