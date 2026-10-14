@@ -28,6 +28,6 @@ How to contribute:
 
 There is a "Fork" button on this page that you can use to 'copy' the github page to your own account, where you can modify everything to your hearts content. 
 
-2. Follow the [wiki](https://github.com/gggga00/Mario-Rabbids-Community-Versus-Sets/wiki) for directions on how to add/modify versus sets
+2. Follow the [wiki](https://github.com/gggga00/Mario-Rabbids-Community-Versus-Sets/wiki) for directions on how to add/modify versus sets and some practices you should follow when adding to this mod.
 
 3. Make a pull request with your modified files. Here is an explanation on how to make pull requests: https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request
