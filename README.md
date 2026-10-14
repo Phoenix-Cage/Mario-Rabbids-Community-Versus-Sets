@@ -24,7 +24,7 @@ In both cases, this would allow the modified sdfdata file to overwrite the origi
 
 How to contribute:
 
-1. Download the file you want to modify from here (this is to ensure that compatibility with the rest of the mod).
+1. Download the romFS files you want to modify from here, instead of using your own. This is to ensure compatibility with the rest of the mod.
 
 There is a "Fork" button on this page that you can use to 'copy' the github page to your own account, where you can modify everything to your hearts content. 
 
