@@ -62,7 +62,8 @@ import/
 
 ### 3. Reimport the files
 
-Use the [Mario + Rabbids ROMFS Repacker](https://github.com/gggga00/mrkb-romFS-repacker) to reimport the folder into the game's file structure.
+Use the [Mario + Rabbids ROMFS Repacker](https://github.com/gggga00/Mario-Rabbids-Reimportation-Tool)
+to reimport the folder into the game's file structure.
 
 You will need:
 - Your own extracted `sdf.toc` file.
