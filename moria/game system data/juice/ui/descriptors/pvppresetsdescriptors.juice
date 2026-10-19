@@ -99,6 +99,13 @@ PresetDescriptor Descriptor_PVP_DM_RabbidsLuigi_Preset_Invader
 	myInfoCardSlotComparison = ComparisonList_PVP_DM_RabbidsLuigi_Preset_Invader
 }
 
+PresetDescriptor Descriptor_PVP_DM_RabbidsLuigi_Preset_Brawler
+{
+	myName "contextComment = \"Descriptor_PVP_DM_RabbidsLuigi_Preset_Brawler\", description = \"Descriptor_PVP_DM_RabbidsLuigi_Preset_Brawler\", enabled = true, guid = #D7AA725759E8BCDD0000000003000009, lineVersion = 0, maxLength = 47, text = \"Descriptor_PVP_DM_RabbidsLuigi_Preset_Brawler\""
+	myInfoCardLayout = Infocard_Layout_Preset
+	myInfoCardSlotComparison = ComparisonList_PVP_DM_RabbidsLuigi_Preset_Invader
+}
+
 PresetDescriptor Descriptor_PVP_DM_RabbidsPeach_Preset1
 {
 	myName "contextComment = \"Descriptor_PVP_DM_RabbidsPeach_Preset1_Name\", description = \"Descriptor_PVP_DM_RabbidsPeach_Preset1_Name\", enabled = true, guid = #D6AA725759E8BCF200000037FC970A42, lineVersion = 0, maxLength = 47, text = \"Descriptor_PVP_DM_RabbidsPeach_Preset1_Name\""
@@ -288,6 +295,13 @@ PresetDescriptor Descriptor_PVP_DM_Peach_Preset7
 	myInfoCardSlotComparison = ComparisonList_PVP_DM_Peach_Preset2
 }
 
+PresetDescriptor Descriptor_PVP_DM_Peach_Preset_FlySwatter
+{
+	myName "contextComment = \"Descriptor_PVP_DM_Peach_Preset_FlySwatter\", description = \"Descriptor_PVP_DM_Peach_Preset_FlySwatter\", enabled = true, guid = #D7AA725759E8BCDD0000000006000008, lineVersion = 0, maxLength = 47, text = \"Descriptor_PVP_DM_Peach_Preset_FlySwatter\""
+	myInfoCardLayout = Infocard_Layout_Preset
+	myInfoCardSlotComparison = ComparisonList_PVP_DM_Peach_Preset_FlySwatter
+}
+
 PresetDescriptor Descriptor_PVP_DM_RabbidsYoshi_Preset1
 {
 	myName "contextComment = \"Descriptor_PVP_DM_RabbidsYoshi_Preset1_Name\", description = \"Descriptor_PVP_DM_RabbidsYoshi_Preset1_Name\", enabled = true, guid = #D6AA725759E8BD1E0000004431ACEF58, lineVersion = 0, maxLength = 47, text = \"Descriptor_PVP_DM_RabbidsYoshi_Preset1_Name\""
@@ -342,6 +356,13 @@ PresetDescriptor Descriptor_PVP_DM_RabbidsYoshi_Preset8
 	myName "contextComment = \"Descriptor_PVP_DM_RabbidsYoshi_Preset8_Name\", description = \"Descriptor_PVP_DM_RabbidsYoshi_Preset8_Name\", enabled = true, guid = #D7AA725759E8BCDD0000000007000008, lineVersion = 0, maxLength = 47, text = \"Descriptor_PVP_DM_RabbidsYoshi_Preset8_Name\""
 	myInfoCardLayout = Infocard_Layout_Preset
 	myInfoCardSlotComparison = ComparisonList_PVP_DM_RabbidsYoshi_Preset3
+}
+
+PresetDescriptor Descriptor_PVP_DM_RabbidsYoshi_Preset_NanomachinesSon
+{
+	myName "contextComment = \"Descriptor_PVP_DM_RabbidsYoshi_Preset_NanomachinesSon\", description = \"Descriptor_PVP_DM_RabbidsYoshi_Preset_NanomachinesSon\", enabled = true, guid = #D7AA725759E8BCDD0000000007000009, lineVersion = 0, maxLength = 57, text = \"Descriptor_PVP_DM_RabbidsYoshi_Preset_NanomachinesSon\""
+	myInfoCardLayout = Infocard_Layout_Preset
+	myInfoCardSlotComparison = ComparisonList_PVP_DM_RabbidsYoshi_NanomachinesSon
 }
 
 PresetDescriptor Descriptor_PVP_DM_Yoshi_Preset1

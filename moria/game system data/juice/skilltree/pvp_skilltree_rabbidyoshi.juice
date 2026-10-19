@@ -211,6 +211,13 @@ Skill PVP_DM_SKL_RabbidsYoshi_DashDamage < uid=8297F7EA59D4DE46000003A9BD5859B1 
 				myDashDamageAbsolute 20.0
 			}
 		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 10.0
+			}
+		}
 	}
 	myDescriptor : Descriptor_SKL_DashDamage
 	{
@@ -354,6 +361,13 @@ Skill PVP_DM_SKL_RabbidsYoshi_ShieldWeaponDamageReduction < uid=8297F7EA59D4DE46
 				myPrimary_TechniqueDamageReductionWeapon 0.8
 			}
 		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.95
+			}
+		}
 	}
 	myDescriptor : Descriptor_SKL_RabbidYoshi_ShieldWeaponDamageReduction
 	{
@@ -385,6 +399,13 @@ Skill PVP_DM_SKL_RabbidsYoshi_ShieldMoveDamageReduction < uid=8297F7EA59D4DE4600
 			myBonus
 			{
 				myPrimary_TechniqueDamageReductionMovement 0.8
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.95
 			}
 		}
 	}
@@ -420,6 +441,13 @@ Skill PVP_DM_SKL_RabbidsYoshi_ShieldNumber < uid=8297F7EA59D4DE46000003B735E4FD2
 				myPrimary_TechniqueNumber 1
 			}
 		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 4
+			}
+		}
 	}
 	myDescriptor : Descriptor_SKL_RabbidYoshi_ShieldNumber
 	{
@@ -451,6 +479,13 @@ Skill PVP_DM_SKL_RabbidsYoshi_ShieldCooldown < uid=8297F7EA59D4DE46000003B926987
 			myBonus
 			{
 				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 0
 			}
 		}
 	}

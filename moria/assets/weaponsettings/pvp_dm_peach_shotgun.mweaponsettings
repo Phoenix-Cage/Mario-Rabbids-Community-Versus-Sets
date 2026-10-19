@@ -95,5 +95,145 @@ ListWeaponSettings PVP_DM_Peach_Shotguns
 		myBulletParameters < uid=8297F7EA59D646AF0000004125A3F15E > = BulletParameters_ShotgunCone
 		myVersionInfoConditions < uid=8297F7EA59D646AF00000042A0C9FE13 > = VER_Retail
 	}
+	WeaponSettings Peach_Shotgun_Preset4
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_peach_10.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Peach_Shotgun_10
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D4BA75000002385807954B > : AttackParameters_Shotgun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50
+			mySuperChance 50
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Freeze
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4BA7500000239C4FC7D66 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4BA750000023A7588B99F > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D4BA750000023B3C21EBC3 > = VER_Retail
+	}
+	WeaponSettings Peach_Shotgun_Preset5
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_peach_04.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Peach_Shotgun_3
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D646AF0000003BCD42F65E > : AttackParameters_Shotgun
+		{
+			myDamageBase 40
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 70
+			mySuperChance 30
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Burn
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D646AF0000003CF00CCB54 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D646AF0000003D4E1B4924 > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D646AF0000003EFD8F0C1D > = VER_Retail
+	}
+	WeaponSettings Peach_Shotgun_Preset6
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_peach_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Peach_Shotgun_2
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D646AF0000003F27A5E5F4 > : AttackParameters_Shotgun
+		{
+			myDamageBase 60
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20
+			mySuperChance 80
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Freeze
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D646AF00000040B165DC3F > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D646AF0000004125A3F15E > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D646AF00000042A0C9FE13 > = VER_Retail
+	}
+	WeaponSettings Peach_Shotgun_Preset7
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_peach_10.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Peach_Shotgun_10
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D4BA75000002385807954B > : AttackParameters_Shotgun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50
+			mySuperChance 50
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Freeze
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4BA7500000239C4FC7D66 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4BA750000023A7588B99F > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D4BA750000023B3C21EBC3 > = VER_Retail
+	}
+	WeaponSettings Peach_Shotgun_Preset8
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_rabbidmario_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsMario_Shotgun_2
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D646AF0000003BCD42F65E > : AttackParameters_Shotgun
+		{
+			myDamageBase 40
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 0
+			mySuperChance 100
+			mySuperDamageMod 0.24
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D646AF0000003CF00CCB54 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D646AF0000003D4E1B4924 > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D646AF0000003EFD8F0C1D > = VER_Retail
+	}
 }
 

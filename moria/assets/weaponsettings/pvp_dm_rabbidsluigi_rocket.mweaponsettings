@@ -8,6 +8,9 @@ include "moria/game system data/juice/currency/prices.juice"
 include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
 include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
 include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_meleeweapon.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_meleeweapon.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_meleeweapon.juice"
 
 ListWeaponSettings PVP_DM_RabbidsLuigi_Rockets
 {
@@ -122,6 +125,39 @@ ListWeaponSettings PVP_DM_RabbidsLuigi_Rockets
 		myAdvantage < uid=8297F7EA59D634E9000000F5B2AFB316 > = NULLREFERENCE
 		myBulletParameters < uid=8297F7EA59D634E9000000F66E14C615 > = BulletParameters_Rocket
 		myVersionInfoConditions < uid=8297F7EA59D634E9000000F72C10E899 > = VER_Retail
+	}
+	WeaponSettings RabbidsLuigi_Rocket_Preset5
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_melee_rabbidmario_11.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsMario_Melee_10
+		myWeaponCategory MeleeWeapon
+		myUnlockState Locked
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_MeleeWeapon
+		myAttackParameters < uid=D6AA725758933CF3000013749E3DA7AA > : AttackParameters_MeleeWeapon
+		{
+			myDamageBase 60
+			myDamageMin -5
+			myDamageMax 5
+			myCoverDamage 0.0
+			myHitChance 90.0
+			mySuperChance 10.0
+			mySuperDamageMod 0.2
+			myShapeRadius 5.0
+			myTargetingRangeMax 3.0
+			myCooldown 1
+		}
+		myBonus1 = SideEffect_Stone
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=D6AA7257589DA8CF000000BE41159BDD > = NULLREFERENCE
+		myBulletParameters < uid=D6AA7257575ED3D3000001FC38887E23 > = BulletParameters_MeleeWeapon
+		myVersionInfo = Retail
+		myVersionInfoConditions < uid=D6AA72575935272F000000A5199A081D > = VER_Retail
 	}
 }
 

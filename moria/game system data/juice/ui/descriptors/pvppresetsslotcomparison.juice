@@ -83,6 +83,19 @@ InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsLuigi_Preset_Invader
 	ComparisonValue HP Same
 	ComparisonValue DASH Worst
 	ComparisonValue TEAMJUMP Better
+	ComparisonValue PRIMARYWEAPON Better
+	ComparisonValue SECONDARYWEAPON Better
+	ComparisonValue PRIMARYWEAPONSIDEEFFECT Better
+	ComparisonValue SECONDARYWEAPONSIDEEFFECT Better
+	ComparisonValue PRIMARYTECHNIQUE Worst
+	ComparisonValue SECONDARYTECHNIQUE Worst
+}
+
+InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsLuigi_Preset_Brawler
+{
+	ComparisonValue HP Same
+	ComparisonValue DASH Worst
+	ComparisonValue TEAMJUMP Same
 	ComparisonValue PRIMARYWEAPON Same
 	ComparisonValue SECONDARYWEAPON Same
 	ComparisonValue PRIMARYWEAPONSIDEEFFECT Same
@@ -273,6 +286,19 @@ InfoCardSlotComparisonList ComparisonList_PVP_DM_Peach_Preset3
 	ComparisonValue SECONDARYTECHNIQUE Worst
 }
 
+InfoCardSlotComparisonList ComparisonList_PVP_DM_Peach_Preset_FlySwatter
+{
+	ComparisonValue HP Same
+	ComparisonValue DASH Same
+	ComparisonValue TEAMJUMP Same
+	ComparisonValue PRIMARYWEAPON Worst
+	ComparisonValue SECONDARYWEAPON Same
+	ComparisonValue PRIMARYWEAPONSIDEEFFECT Worst
+	ComparisonValue SECONDARYWEAPONSIDEEFFECT Same
+	ComparisonValue PRIMARYTECHNIQUE Worst
+	ComparisonValue SECONDARYTECHNIQUE Same
+}
+
 InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsYoshi_Preset1
 {
 	ComparisonValue HP Same
@@ -310,6 +336,20 @@ InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsYoshi_Preset3
 	ComparisonValue SECONDARYWEAPONSIDEEFFECT Better
 	ComparisonValue PRIMARYTECHNIQUE Same
 	ComparisonValue SECONDARYTECHNIQUE Better
+}
+
+
+InfoCardSlotComparisonList ComparisonList_PVP_DM_RabbidsYoshi_NanomachinesSon
+{
+	ComparisonValue HP Worst
+	ComparisonValue DASH Worst
+	ComparisonValue TEAMJUMP Same
+	ComparisonValue PRIMARYWEAPON Same
+	ComparisonValue SECONDARYWEAPON Same
+	ComparisonValue PRIMARYWEAPONSIDEEFFECT Same
+	ComparisonValue SECONDARYWEAPONSIDEEFFECT Same
+	ComparisonValue PRIMARYTECHNIQUE Better
+	ComparisonValue SECONDARYTECHNIQUE Worst
 }
 
 InfoCardSlotComparisonList ComparisonList_PVP_DM_Yoshi_Preset1

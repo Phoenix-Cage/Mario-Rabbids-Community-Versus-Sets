@@ -212,6 +212,13 @@ Skill PVP_DM_SKL_RabbidsLuigi_DashDamage < uid=8297F7EA59D4A2D2000000F203A60978 
 				myDashDamageAbsolute 10.0
 			}
 		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 0.0
+			}
+		}
 	}
 	myDescriptor : Descriptor_SKL_DashDamage
 	{
@@ -318,6 +325,13 @@ Skill PVP_DM_SKL_RabbidsLuigi_DashVampireSteal < uid=8297F7EA59D4A2D2000000F6F35
 			myBonus
 			{
 				myVampireDashGain 0.0
+			}
+		}
+		Step Preset9
+		{
+			myBonus
+			{
+				myVampireDashGain 1.0
 			}
 		}
 
@@ -457,6 +471,13 @@ Skill PVP_DM_SKL_RabbidsLuigi_ShieldWeaponDamageReduction < uid=8297F7EA59D4A2D2
 				myPrimary_TechniqueDamageReductionWeapon 0.5
 			}
 		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.0
+			}
+		}
 	}
 	myDescriptor : Descriptor_SKL_RabbidLuigi_ShieldWeaponDamageReduction
 	{
@@ -497,6 +518,13 @@ Skill PVP_DM_SKL_RabbidsLuigi_ShieldMoveDamageReduction < uid=8297F7EA59D4A2D200
 				myPrimary_TechniqueDamageReductionMovement 0.5
 			}
 		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.0
+			}
+		}
 	}
 	myDescriptor : Descriptor_SKL_RabbidLuigi_ShieldMovementDamageReduction
 	{
@@ -535,6 +563,13 @@ Skill PVP_DM_SKL_RabbidsLuigi_ShieldCooldown < uid=8297F7EA59D4A2D20000010468BFB
 			myBonus
 			{
 				myPrimary_TechniqueCooldown 1
+			}
+		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 0
 			}
 		}
 	}
@@ -648,6 +683,13 @@ Skill PVP_DM_SKL_RabbidsLuigi_WeakinizerIncrement < uid=8297F7EA59D4A2D20000010A
 			myBonus
 			{
 				myWeakinizerDamage 0.5
+			}
+		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myWeakinizerDamage 0.3
 			}
 		}
 	}

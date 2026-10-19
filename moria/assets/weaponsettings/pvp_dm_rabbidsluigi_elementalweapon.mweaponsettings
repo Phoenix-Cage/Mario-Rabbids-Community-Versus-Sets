@@ -8,6 +8,9 @@ include "moria/game system data/juice/currency/prices.juice"
 include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
 include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
 include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_shotgun.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_shotgun.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_shotgun.juice"
 
 ListWeaponSettings PVP_DM_RabbidsLuigi_ElementalWeapons
 {
@@ -122,6 +125,34 @@ ListWeaponSettings PVP_DM_RabbidsLuigi_ElementalWeapons
 		myAdvantage < uid=8297F7EA59D6320D000000ED0EA9EA22 > = NULLREFERENCE
 		myBulletParameters < uid=8297F7EA59D6320D000000EECC2B62A4 > = BulletParameters_ElementalWeapon
 		myVersionInfoConditions < uid=8297F7EA59D6320D000000EF5ED2AE77 > = VER_Retail
+	}
+	WeaponSettings RabbidsLuigi_ElementalWeapon_Preset5
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_shotgun_rabbidmario_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsMario_Shotgun_2
+		myWeaponCategory Shotgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Shotgun
+		myAttackParameters < uid=8297F7EA59D646AF0000003BCD42F65E > : AttackParameters_Shotgun
+		{
+			myDamageBase 50
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 100
+			mySuperChance 0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Vampire
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D646AF0000003CF00CCB54 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D646AF0000003D4E1B4924 > = BulletParameters_ShotgunCone
+		myVersionInfoConditions < uid=8297F7EA59D646AF0000003EFD8F0C1D > = VER_Retail
 	}
 }
 
