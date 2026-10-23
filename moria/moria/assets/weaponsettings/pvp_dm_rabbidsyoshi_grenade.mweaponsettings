@@ -1,0 +1,239 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_grenade.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_grenade.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_grenade.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+
+ListWeaponSettings PVP_DM_RabbidsYoshi_Grenades
+{
+	WeaponSettings RabbidsYoshi_Grenade_Preset1
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_grenade_rabbidyoshi_05.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsYoshi_Grenade_6
+		myWeaponCategory Grenade
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Grenade
+		myAttackParameters < uid=8297F7EA59D4D93800000358C72055D8 > : AttackParameters_Grenade
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4D938000003596F8083AC > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4D9380000035A522894D3 > = BulletParameters_Grenade
+		myVersionInfoConditions < uid=8297F7EA59D4D9380000035B408C3303 > = VER_Retail
+	}
+	WeaponSettings RabbidsYoshi_Grenade_Preset2
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_grenade_rabbidyoshi_06.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsYoshi_Grenade_8
+		myWeaponCategory Grenade
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Grenade
+		myAttackParameters < uid=8297F7EA59D64A6800000053F56E8E19 > : AttackParameters_Grenade
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64A6800000054D54D3AC8 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64A6800000055414FF822 > = BulletParameters_Grenade
+		myVersionInfoConditions < uid=8297F7EA59D64A6800000056C1A84510 > = VER_Retail
+	}
+	WeaponSettings RabbidsYoshi_Grenade_Preset3
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_grenade_rabbidyoshi_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsYoshi_Grenade_2
+		myWeaponCategory Grenade
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Grenade
+		myAttackParameters < uid=8297F7EA59D64A68000000574037057A > : AttackParameters_Grenade
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20.0
+			mySuperChance 80.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64A6800000058FC10ECCE > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64A6800000059C2A09586 > = BulletParameters_Grenade
+		myVersionInfoConditions < uid=8297F7EA59D64A680000005A41A3C807 > = VER_Retail
+	}
+	WeaponSettings RabbidsYoshi_Grenade_Preset4
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_grenade_rabbidyoshi_05.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsYoshi_Grenade_6
+		myWeaponCategory Grenade
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Grenade
+		myAttackParameters < uid=8297F7EA59D4D93800000358C72055D8 > : AttackParameters_Grenade
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4D938000003596F8083AC > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4D9380000035A522894D3 > = BulletParameters_Grenade
+		myVersionInfoConditions < uid=8297F7EA59D4D9380000035B408C3303 > = VER_Retail
+	}
+	WeaponSettings RabbidsYoshi_Grenade_Preset5
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_grenade_rabbidyoshi_06.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsYoshi_Grenade_8
+		myWeaponCategory Grenade
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Grenade
+		myAttackParameters < uid=8297F7EA59D64A6800000053F56E8E19 > : AttackParameters_Grenade
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64A6800000054D54D3AC8 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64A6800000055414FF822 > = BulletParameters_Grenade
+		myVersionInfoConditions < uid=8297F7EA59D64A6800000056C1A84510 > = VER_Retail
+	}
+	WeaponSettings RabbidsYoshi_Grenade_Preset6
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_grenade_rabbidyoshi_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsYoshi_Grenade_2
+		myWeaponCategory Grenade
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Grenade
+		myAttackParameters < uid=8297F7EA59D64A68000000574037057A > : AttackParameters_Grenade
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 20.0
+			mySuperChance 80.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64A6800000058FC10ECCE > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64A6800000059C2A09586 > = BulletParameters_Grenade
+		myVersionInfoConditions < uid=8297F7EA59D64A680000005A41A3C807 > = VER_Retail
+	}
+	WeaponSettings RabbidsYoshi_Grenade_Preset7
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_grenade_rabbidyoshi_06.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsYoshi_Grenade_8
+		myWeaponCategory Grenade
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Grenade
+		myAttackParameters < uid=8297F7EA59D64A6800000053F56E8E19 > : AttackParameters_Grenade
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64A6800000054D54D3AC8 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64A6800000055414FF822 > = BulletParameters_Grenade
+		myVersionInfoConditions < uid=8297F7EA59D64A6800000056C1A84510 > = VER_Retail
+	}
+	WeaponSettings RabbidsYoshi_Grenade_Preset8
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_grenade_rabbidyoshi_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_RabbidsYoshi_Grenade_2
+		myWeaponCategory Grenade
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Grenade
+		myAttackParameters < uid=8297F7EA59D64A68000000574037057A > : AttackParameters_Grenade
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Push
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64A6800000058FC10ECCE > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64A6800000059C2A09586 > = BulletParameters_Grenade
+		myVersionInfoConditions < uid=8297F7EA59D64A680000005A41A3C807 > = VER_Retail
+	}
+}
+

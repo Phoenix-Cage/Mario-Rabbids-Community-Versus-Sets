@@ -1,0 +1,226 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_deployable.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_deployable.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_deployable.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+include "moria/game system data/juice/weaponsettings/params/pvp_bulletparameters_deployable.juice"
+
+WeaponSettings RabbidsPeach_Deployable_Preset1
+{
+	myGraphObject "moria/graph objects/weapon/wpn_deployables_rabbidpeach_08.mgraphobject"
+	myEquipmentDescriptor = Descriptor_RabbidsPeach_Deployable_11
+	myWeaponCategory Deployable
+	myUnlockState Owned
+	myUnlockDescriptor = NULLREFERENCE
+	myPrice
+	{
+		myCurrencyAmount 0
+	}
+	myAttackLevels = AttackLevels_Deployable
+	myAttackParameters < uid=8297F7EA59D5EA84000000093338B41B > : AttackParameters_Deployable
+	{
+		myDamageBase 40
+		myDamageMin -5
+		myDamageMax 5
+		myHitChance 50.0
+		mySuperChance 50.0
+		mySuperDamageMod 0.2
+	}
+	myBonus1 = SideEffect_Honey
+	myBonus2 = NULLREFERENCE
+	myBonus3 = NULLREFERENCE
+	myAdvantage < uid=8297F7EA59D5EA840000000A189542F1 > = NULLREFERENCE
+	myBulletParameters < uid=8297F7EA59D5EA840000000B198F5FF0 > = PVP_DM_BulletParameters_Deployable_RabbidsPeach
+	myVersionInfoConditions < uid=8297F7EA59D5EA840000000CF7A211D7 > = VER_Retail
+}
+
+WeaponSettings RabbidsPeach_Deployable_Preset2
+{
+	myGraphObject "moria/graph objects/weapon/wpn_deployables_rabbidpeach_02.mgraphobject"
+	myEquipmentDescriptor = Descriptor_RabbidsPeach_Deployable_2
+	myWeaponCategory Deployable
+	myUnlockState Owned
+	myUnlockDescriptor = NULLREFERENCE
+	myPrice
+	{
+		myCurrencyAmount 0
+	}
+	myAttackLevels = AttackLevels_Deployable
+	myAttackParameters < uid=8297F7EA59D63B9E000000137937C923 > : AttackParameters_Deployable
+	{
+		myDamageBase 40
+		myDamageMin -5
+		myDamageMax 5
+		myHitChance 50.0
+		mySuperChance 50.0
+		mySuperDamageMod 0.2
+	}
+	myBonus1 = SideEffect_Push
+	myBonus2 = NULLREFERENCE
+	myBonus3 = NULLREFERENCE
+	myAdvantage < uid=8297F7EA59D63B9E00000014E8A32F88 > = NULLREFERENCE
+	myBulletParameters < uid=8297F7EA59D63B9E00000015E78301ED > = PVP_DM_BulletParameters_Deployable_RabbidsPeach
+	myVersionInfoConditions < uid=8297F7EA59D63B9E00000016C77BD2C6 > = VER_Retail
+}
+
+WeaponSettings RabbidsPeach_Deployable_Preset3
+{
+	myGraphObject "moria/graph objects/weapon/wpn_deployables_rabbidpeach_17.mgraphobject"
+	myEquipmentDescriptor = Descriptor_RabbidsPeach_Deployable_17
+	myWeaponCategory Deployable
+	myUnlockState Owned
+	myUnlockDescriptor = NULLREFERENCE
+	myPrice
+	{
+		myCurrencyAmount 0
+	}
+	myAttackLevels = AttackLevels_Deployable
+	myAttackParameters < uid=8297F7EA59D63B9E0000001700C265DB > : AttackParameters_Deployable
+	{
+		myDamageBase 30
+		myDamageMin -5
+		myDamageMax 5
+		myHitChance 50.0
+		mySuperChance 50.0
+		mySuperDamageMod 0.2
+	}
+	myBonus1 = SideEffect_Honey
+	myBonus2 = NULLREFERENCE
+	myBonus3 = NULLREFERENCE
+	myAdvantage < uid=8297F7EA59D63B9E00000018F1ECD524 > = NULLREFERENCE
+	myBulletParameters < uid=8297F7EA59D63B9E000000190E9F2E9D > = PVP_DM_BulletParameters_Deployable_RabbidsPeach
+	myVersionInfoConditions < uid=8297F7EA59D63B9E0000001A176B206A > = VER_Retail
+}
+
+WeaponSettings RabbidsPeach_Deployable_Preset4
+{
+	myGraphObject "moria/graph objects/weapon/wpn_deployables_rabbidpeach_08.mgraphobject"
+	myEquipmentDescriptor = Descriptor_RabbidsPeach_Deployable_11
+	myWeaponCategory Deployable
+	myUnlockState Owned
+	myUnlockDescriptor = NULLREFERENCE
+	myPrice
+	{
+		myCurrencyAmount 0
+	}
+	myAttackLevels = AttackLevels_Deployable
+	myAttackParameters < uid=8297F7EA59D5EA84000000093338B41B > : AttackParameters_Deployable
+	{
+		myDamageBase 40
+		myDamageMin -5
+		myDamageMax 5
+		myHitChance 50.0
+		mySuperChance 50.0
+		mySuperDamageMod 0.2
+	}
+	myBonus1 = SideEffect_Honey
+	myBonus2 = NULLREFERENCE
+	myBonus3 = NULLREFERENCE
+	myAdvantage < uid=8297F7EA59D5EA840000000A189542F1 > = NULLREFERENCE
+	myBulletParameters < uid=8297F7EA59D5EA840000000B198F5FF0 > = PVP_DM_BulletParameters_Deployable_RabbidsPeach
+	myVersionInfoConditions < uid=8297F7EA59D5EA840000000CF7A211D7 > = VER_Retail
+}
+
+WeaponSettings RabbidsPeach_Deployable_Preset5
+{
+	myGraphObject "moria/graph objects/weapon/wpn_deployables_rabbidpeach_02.mgraphobject"
+	myEquipmentDescriptor = Descriptor_RabbidsPeach_Deployable_2
+	myWeaponCategory Deployable
+	myUnlockState Owned
+	myUnlockDescriptor = NULLREFERENCE
+	myPrice
+	{
+		myCurrencyAmount 0
+	}
+	myAttackLevels = AttackLevels_Deployable
+	myAttackParameters < uid=8297F7EA59D63B9E000000137937C923 > : AttackParameters_Deployable
+	{
+		myDamageBase 40
+		myDamageMin -5
+		myDamageMax 5
+		myHitChance 50.0
+		mySuperChance 50.0
+		mySuperDamageMod 0.2
+	}
+	myBonus1 = SideEffect_Push
+	myBonus2 = NULLREFERENCE
+	myBonus3 = NULLREFERENCE
+	myAdvantage < uid=8297F7EA59D63B9E00000014E8A32F88 > = NULLREFERENCE
+	myBulletParameters < uid=8297F7EA59D63B9E00000015E78301ED > = PVP_DM_BulletParameters_Deployable_RabbidsPeach
+	myVersionInfoConditions < uid=8297F7EA59D63B9E00000016C77BD2C6 > = VER_Retail
+}
+
+WeaponSettings RabbidsPeach_Deployable_Preset6
+{
+	myGraphObject "moria/graph objects/weapon/wpn_deployables_rabbidpeach_17.mgraphobject"
+	myEquipmentDescriptor = Descriptor_RabbidsPeach_Deployable_17
+	myWeaponCategory Deployable
+	myUnlockState Owned
+	myUnlockDescriptor = NULLREFERENCE
+	myPrice
+	{
+		myCurrencyAmount 0
+	}
+	myAttackLevels = AttackLevels_Deployable
+	myAttackParameters < uid=8297F7EA59D63B9E0000001700C265DB > : AttackParameters_Deployable
+	{
+		myDamageBase 30
+		myDamageMin -5
+		myDamageMax 5
+		myHitChance 50.0
+		mySuperChance 50.0
+		mySuperDamageMod 0.2
+	}
+	myBonus1 = SideEffect_Honey
+	myBonus2 = NULLREFERENCE
+	myBonus3 = NULLREFERENCE
+	myAdvantage < uid=8297F7EA59D63B9E00000018F1ECD524 > = NULLREFERENCE
+	myBulletParameters < uid=8297F7EA59D63B9E000000190E9F2E9D > = PVP_DM_BulletParameters_Deployable_RabbidsPeach
+	myVersionInfoConditions < uid=8297F7EA59D63B9E0000001A176B206A > = VER_Retail
+}
+
+WeaponSettings RabbidsPeach_Deployable_Preset7
+{
+	myGraphObject "moria/graph objects/weapon/wpn_deployables_rabbidpeach_17.mgraphobject"
+	myEquipmentDescriptor = Descriptor_RabbidsPeach_Deployable_17
+	myWeaponCategory Deployable
+	myUnlockState Owned
+	myUnlockDescriptor = NULLREFERENCE
+	myPrice
+	{
+		myCurrencyAmount 0
+	}
+	myAttackLevels = AttackLevels_Deployable
+	myAttackParameters < uid=8297F7EA59D63B9E0000001700C265DB > : AttackParameters_Deployable
+	{
+		myDamageBase 40
+		myDamageMin -5
+		myDamageMax 5
+		myHitChance 50.0
+		mySuperChance 50.0
+		mySuperDamageMod 0.2
+	}
+	myBonus1 = SideEffect_Honey
+	myBonus2 = NULLREFERENCE
+	myBonus3 = NULLREFERENCE
+	myAdvantage < uid=8297F7EA59D63B9E00000018F1ECD524 > = NULLREFERENCE
+	myBulletParameters < uid=8297F7EA59D63B9E000000190E9F2E9D > = PVP_DM_BulletParameters_Deployable_RabbidsPeach
+	myVersionInfoConditions < uid=8297F7EA59D63B9E0000001A176B206A > = VER_Retail
+}
+
+ListWeaponSettings PVP_DM_RabbidsPeach_Deployables
+{
+	WeaponSettings RabbidsPeach_Deployable_Preset1 = RabbidsPeach_Deployable_Preset1
+	WeaponSettings RabbidsPeach_Deployable_Preset2 = RabbidsPeach_Deployable_Preset2
+	WeaponSettings RabbidsPeach_Deployable_Preset3 = RabbidsPeach_Deployable_Preset3
+	WeaponSettings RabbidsPeach_Deployable_Preset1 = RabbidsPeach_Deployable_Preset4
+	WeaponSettings RabbidsPeach_Deployable_Preset2 = RabbidsPeach_Deployable_Preset5
+	WeaponSettings RabbidsPeach_Deployable_Preset3 = RabbidsPeach_Deployable_Preset6
+	WeaponSettings RabbidsPeach_Deployable_Preset7 = RabbidsPeach_Deployable_Preset7
+}
+

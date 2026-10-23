@@ -1,0 +1,102 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_meleeweapon.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_meleeweapon.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_meleeweapon.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+
+ListWeaponSettings PVP_DM_Mario_MeleeWeapons
+{
+	WeaponSettings Mario_MeleeWeapon_Preset1
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_melee_mario_03.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Mario_Melee_5
+		myWeaponCategory MeleeWeapon
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_MeleeWeapon
+		myAttackParameters < uid=D6AA725759CD2AE5000000CBEB586277 > : AttackParameters_MeleeWeapon
+		{
+			myDamageBase 60
+			myDamageMin -5
+			myDamageMax 5
+			myCoverDamage 0.0
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Bounce
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=D6AA725759CD2AE5000000CC80CD50D1 > = NULLREFERENCE
+		myBulletParameters < uid=D6AA725759CD2AE5000000CD52889CC3 > = BulletParameters_MeleeWeapon
+		myVersionInfoConditions < uid=D6AA725759CD2AE5000000CE9C30AC90 > = VER_Retail
+	}
+	WeaponSettings Mario_MeleeWeapon_Preset2
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_melee_mario_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Mario_Melee_3
+		myWeaponCategory MeleeWeapon
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_MeleeWeapon
+		myAttackParameters < uid=8297F7EA59D62C99000000E00FAB0811 > : AttackParameters_MeleeWeapon
+		{
+			myDamageBase 60
+			myDamageMin -5
+			myDamageMax 5
+			myCoverDamage 0.0
+			myHitChance 70.0
+			mySuperChance 30.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Bounce
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D62C99000000E163DF222A > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D62C99000000E282DDB86B > = BulletParameters_MeleeWeapon
+		myVersionInfoConditions < uid=8297F7EA59D62C99000000E354E9246D > = VER_Retail
+	}
+	WeaponSettings Mario_MeleeWeapon_Preset3
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_melee_mario_09.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Mario_Melee_9
+		myWeaponCategory MeleeWeapon
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_MeleeWeapon
+		myAttackParameters < uid=8297F7EA59D62C99000000E403554561 > : AttackParameters_MeleeWeapon
+		{
+			myDamageBase 70
+			myDamageMin -5
+			myDamageMax 5
+			myCoverDamage 0.0
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Bounce
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D62C99000000E59901F953 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D62C99000000E6F67014F8 > = BulletParameters_MeleeWeapon
+		myVersionInfoConditions < uid=8297F7EA59D62C99000000E7EBA78C17 > = VER_Retail
+	}
+}
+

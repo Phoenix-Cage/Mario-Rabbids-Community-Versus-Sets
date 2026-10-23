@@ -1,0 +1,22 @@
+include ./rabbidsmario.mfightersettings
+include "moria/game system data/juice/fighter/params/pvp_ranksparameters_rabbidsmario.juice"
+include "moria/game system data/juice/movesettings/pvp_moveabilities_rabbidsmario.juice"
+include moria/assets/weaponsettings/pvp_dm_rabbidsmario_shotgun.mweaponsettings
+include moria/assets/weaponsettings/pvp_dm_rabbidsmario_meeleeweapon.mweaponsettings
+include "moria/game system data/juice/techniquesettings/pvp_rabbidsmario_shield.juice"
+include "moria/game system data/juice/techniquesettings/pvp_rabbidsmario_magnetdance.juice"
+include "moria/game system data/juice/skilltree/pvp_skilltree_rabbidmario.juice"
+
+FighterSettings PVP_DM_RabbidsMario : RabbidsMario
+{
+	myRanks = PVP_DM_Ranks_RabbidsMario
+	myMoveAbilitiesSettings = PVP_DM_MoveAbilities_RabbidsMario
+	myPrimaryWeaponList = PVP_DM_RabbidsMario_Shotgun
+	mySecondaryWeaponList = PVP_DM_RabbidsMario_MeleeWeapons
+	myPrimaryTechnique = PVP_DM_RabbidsMario_Shield
+	mySecondaryTechnique = PVP_DM_RabbidsMario_MagnetDance
+	myPositioningConditions < uid=D6AA72575A0422A0000000252CC1BF3B > = Positioning_PVP_DM
+	myUISettings = UI_PVP_DM_RabbidsMario
+	mySkillTree = PVP_DM_Skilltree_RabbidMario
+}
+

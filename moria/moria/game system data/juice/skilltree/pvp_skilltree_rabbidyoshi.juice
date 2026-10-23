@@ -1,0 +1,602 @@
+include ./skilltree_slot/skilltree_slotlist.juice
+include "moria/game system data/fruit/fighter/skilltree/skilltree.fruit"
+include "moria/game system data/juice/ui/descriptors/skilltreebonus.juice"
+include "moria/game system data/juice/ui/descriptors/skilltree/skilltreemetrics.juice"
+
+Skill PVP_DM_SKL_RabbidsYoshi_Dash < uid=8297F7EA59D4DE46000003966BB80037 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Dash
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_RabbidYoshi_TripleDash.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_TeamJump < uid=8297F7EA59D4DE460000039739C6B9CF >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJump
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_teamjump.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_Powergun < uid=8297F7EA59D4DE4600000398861AEEE5 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Powergun
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_wpnprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_Shield < uid=8297F7EA59D4DE46000003996295F7FB >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidYoshi_Shield
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_techprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_TripleDash < uid=8297F7EA59D4DE460000039AC987FA26 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : MOVEMENT_SPECIALIZATION
+			{
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myDescriptor : Descriptor_SKL_TripleDash
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_dash.dds
+	}
+	myMetric = MovementSpecialization
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_Grenade < uid=8297F7EA59D4DE460000039BC5832A18 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : SECONDARY_WEAPON
+			{
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myRequirements
+	{
+	}
+	myDescriptor : Descriptor_SKL_Grenade
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_wpnsec.dds
+	}
+	myMetric = SecondaryWeapon
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_RabbidScream < uid=8297F7EA59D4DE460000039C94BF998B >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus
+			{
+				mySecondaryTechniqueUnlocked TRUE
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidScream
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_techsec.dds
+	}
+	myMetric = SecondaryTechnique
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_Hp < uid=8297F7EA59D4DE460000039D59588EC8 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Hp
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_hp.dds
+	}
+	myMetric = HP
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_Aom < uid=8297F7EA59D4DE46000003A1865F6A4D >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Aom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_aom.dds
+	}
+	myMetric = AOM
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_PipeAom < uid=8297F7EA59D4DE46000003A5213FD054 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_PipeAom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_pipe.dds
+	}
+	myMetric = PipeAOM
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_DashDamage < uid=8297F7EA59D4DE46000003A9BD5859B1 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 30.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 40.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 20.0
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 10.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_DashDamage
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_dash.dds
+	}
+	myMetric = DashDamage
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_DashNumber < uid=8297F7EA59D4DE46000003ABEA8B4314 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myDashNumber 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myDashNumber 2
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myDashNumber 2
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_DashNumber
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_dash.dds
+	}
+	myMetric = DashNumber
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_TeamJumpCleanse < uid=8297F7EA59D4DE46000003AD232BE567 >
+{
+	mySteps
+	{
+		Step 1
+		{
+			myBonus : TEAMJUMP_CLEANSE
+			{
+			}
+			myCost 10
+			myPriority 4
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpCleanse
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidyoshi_cleans.dds
+	}
+	myMetric = TeamJumpCleanse
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_Elevation < uid=8297F7EA59D4DE46000003AF6DA32E3E >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Elevation
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidyoshi_doublewpn.dds
+	}
+	myMetric = Elevation
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_Atomized < uid=8297F7EA59D4DE46000003B1401B3E71 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Atomizer
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_rabbidyoshi_doublewpn.dds
+	}
+	myMetric = Atomized
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_ShieldWeaponDamageReduction < uid=8297F7EA59D4DE46000003B3EBC90F8B >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.8
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 1.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.8
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionWeapon 0.95
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidYoshi_ShieldWeaponDamageReduction
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_techprim.dds
+	}
+	myMetric = ShieldWeaponDamageReduction
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_ShieldMoveDamageReduction < uid=8297F7EA59D4DE46000003B571FEC8BF >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.8
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 1.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.8
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamageReductionMovement 0.95
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidYoshi_ShieldMovementDamageReduction
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_techprim.dds
+	}
+	myMetric = ShieldMoveDamageReduction
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_ShieldNumber < uid=8297F7EA59D4DE46000003B735E4FD24 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 1
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 1
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 4
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidYoshi_ShieldNumber
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_techprim.dds
+	}
+	myMetric = PrimaryTechniqueNumber
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_ShieldCooldown < uid=8297F7EA59D4DE46000003B926987389 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 1
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidYoshi_ShieldCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_techprim.dds
+	}
+	myMetric = PrimaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_RabbidScreamCooldown < uid=8297F7EA59D4DE46000003BB321A05B8 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 3
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 1
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidYoshi_RabbidScreamCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_techsec.dds
+	}
+	myMetric = SecondaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_RabbidsYoshi_RabbidScreamRadius < uid=8297F7EA59D4DE46000003BD51B8938C >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_RabbidYoshi_RabbidScreamRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_rabbidyoshi_techsec.dds
+	}
+	myMetric = SecondaryTechniqueRadius
+}
+
+SkillTree PVP_DM_Skilltree_RabbidYoshi
+{
+	myEXTRA
+	{
+		Skill PVP_DM_SKL_RabbidsYoshi_Hp < uid=8297F7EA59D4DE46000003BFBDEC36B9 > = PVP_DM_SKL_RabbidsYoshi_Hp
+		Skill PVP_DM_SKL_RabbidsYoshi_Aom < uid=8297F7EA59D4DE46000003C0C419BFA3 > = PVP_DM_SKL_RabbidsYoshi_Aom
+		Skill PVP_DM_SKL_RabbidsYoshi_PipeAom < uid=8297F7EA59D4DE46000003C151A8705F > = PVP_DM_SKL_RabbidsYoshi_PipeAom
+	}
+	myMOVEMENT
+	{
+		Skill PVP_DM_SKL_RabbidsYoshi_Dash < uid=8297F7EA59D4DE46000003C2C079ED9E > = PVP_DM_SKL_RabbidsYoshi_Dash
+		Skill PVP_DM_SKL_RabbidsYoshi_TeamJump < uid=8297F7EA59D4DE46000003C31CFC52D6 > = PVP_DM_SKL_RabbidsYoshi_TeamJump
+		Skill PVP_DM_SKL_RabbidsYoshi_TripleDash < uid=8297F7EA59D4DE46000003C41511124D > = PVP_DM_SKL_RabbidsYoshi_TripleDash
+		Skill PVP_DM_SKL_RabbidsYoshi_DashDamage < uid=8297F7EA59D4DE46000003C50729B238 > = PVP_DM_SKL_RabbidsYoshi_DashDamage
+		Skill PVP_DM_SKL_RabbidsYoshi_DashNumber < uid=8297F7EA59D4DE46000003C60833BA5E > = PVP_DM_SKL_RabbidsYoshi_DashNumber
+		Skill PVP_DM_SKL_RabbidsYoshi_TeamJumpCleanse < uid=8297F7EA59D4DE46000003C7F6A7336C > = PVP_DM_SKL_RabbidsYoshi_TeamJumpCleanse
+	}
+	myATTACK
+	{
+		Skill PVP_DM_SKL_RabbidsYoshi_Powergun < uid=8297F7EA59D4DE46000003C86BB9D48F > = PVP_DM_SKL_RabbidsYoshi_Powergun
+		Skill PVP_DM_SKL_RabbidsYoshi_Grenade < uid=8297F7EA59D4DE46000003C9214B13B2 > = PVP_DM_SKL_RabbidsYoshi_Grenade
+		Skill PVP_DM_SKL_RabbidsYoshi_Elevation < uid=8297F7EA59D4DE46000003CAB43FBC8F > = PVP_DM_SKL_RabbidsYoshi_Elevation
+		Skill PVP_DM_SKL_RabbidsYoshi_Atomized < uid=8297F7EA59D4DE46000003CB7BCCC537 > = PVP_DM_SKL_RabbidsYoshi_Atomized
+	}
+	myTECHNIQUE
+	{
+		Skill PVP_DM_SKL_RabbidsYoshi_Shield < uid=8297F7EA59D4DE46000003CCDE747B6D > = PVP_DM_SKL_RabbidsYoshi_Shield
+		Skill PVP_DM_SKL_RabbidsYoshi_RabbidScream < uid=8297F7EA59D4DE46000003CDA7DB3592 > = PVP_DM_SKL_RabbidsYoshi_RabbidScream
+		Skill PVP_DM_SKL_RabbidsYoshi_ShieldWeaponDamageReduction < uid=8297F7EA59D4DE46000003CEEE493E22 > = PVP_DM_SKL_RabbidsYoshi_ShieldWeaponDamageReduction
+		Skill PVP_DM_SKL_RabbidsYoshi_ShieldMoveDamageReduction < uid=8297F7EA59D4DE46000003CFF3B1BBA1 > = PVP_DM_SKL_RabbidsYoshi_ShieldMoveDamageReduction
+		Skill PVP_DM_SKL_RabbidsYoshi_ShieldNumber < uid=8297F7EA59D4DE46000003D08E6319A9 > = PVP_DM_SKL_RabbidsYoshi_ShieldNumber
+		Skill PVP_DM_SKL_RabbidsYoshi_ShieldCooldown < uid=8297F7EA59D4DE46000003D1F06ADA52 > = PVP_DM_SKL_RabbidsYoshi_ShieldCooldown
+		Skill PVP_DM_SKL_RabbidsYoshi_RabbidScreamCooldown < uid=8297F7EA59D4DE46000003D257755253 > = PVP_DM_SKL_RabbidsYoshi_RabbidScreamCooldown
+		Skill PVP_DM_SKL_RabbidsYoshi_RabbidScreamRadius < uid=8297F7EA59D4DE46000003D3296787AF > = PVP_DM_SKL_RabbidsYoshi_RabbidScreamRadius
+	}
+	myUseCumulativeSkillBonus FALSE
+}
+

@@ -1,0 +1,50 @@
+include ./params/moveabilitiesparameters_peach.juice
+include "moria/game system data/fruit/movesettings/movesettings.fruit"
+include "moria/game system data/juice/ui/descriptors/moveabilitiesdescriptors.juice"
+
+MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters < uid=8297F7EA59D4B92700000233C2EB9F28 >
+{
+	myUsePipes TRUE
+	myUseSlide TRUE
+	myUseBarrel TRUE
+	myAom 13
+	myPipeAom 7
+	myIsDashable TRUE
+	myCanDash TRUE
+	myDashNumber 1
+	myExplosiveDashDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+	myCanAssistJump TRUE
+	myIsStompable TRUE
+	myCanTeamJump TRUE
+	myCanLoveJump TRUE
+	myTeamJumpNumber 1
+	myTeamJumpRadius 13
+	myQuakeDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+	myLoveJumpHealCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, -0.333333 -0, }, outTangents = { 0.333333 0, 0 0, }, properties = { 203, 5323, }, values = { 0 1, 1 1, }, }, numKeys = 2, }"
+}
+
+ListMoveAbilitiesSettings PVP_DM_MoveAbilities_Peach
+{
+	MoveAbilitiesSettings MoveAbilities_Preset1 < uid=8297F7EA59D4B88A0000022B5D3E4501 >
+	{
+		myMoveAbilityCategory LoveJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_LongTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59D4B88A0000022C5088A9B5 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset2 < uid=8297F7EA59DC8817000000191A40DD5F >
+	{
+		myMoveAbilityCategory LoveJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_LongTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59DC88170000001A5C357E1C > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset3 < uid=8297F7EA59DC88170000001BAA698B60 >
+	{
+		myMoveAbilityCategory LoveJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_LongTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59DC88170000001C53094EA9 > = PVP_DM_MoveAbilitiesParameters
+	}
+}
+

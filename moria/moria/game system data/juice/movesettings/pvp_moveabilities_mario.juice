@@ -1,0 +1,55 @@
+include "moria/game system data/fruit/movesettings/movesettings.fruit"
+include ./params/moveabilitiesparameters_mario.juice
+include "moria/game system data/juice/ui/descriptors/moveabilitiesdescriptors.juice"
+
+MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters < uid=D6AA725759CD16D10000004FE50A57F9 >
+{
+	myUsePipes TRUE
+	myUseSlide TRUE
+	myUseBarrel TRUE
+	myAom 13
+	myPipeAom 7
+	myIsDashable TRUE
+	myCanDash TRUE
+	myDashNumber 1
+	myDashDamage 0
+	myExplosiveDashDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+	myCanAssistJump TRUE
+	myIsStompable TRUE
+	myCanTeamJump TRUE
+	myCanStomp TRUE
+	myTeamJumpNumber 1
+	myStompNumber 1
+	myTeamJumpRadius 13
+	myStompDamage 0.0
+	myStompRadius 0
+	myQuakeDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+	myNoSelfDamage TRUE
+	myNoCoverDamage TRUE
+}
+
+ListMoveAbilitiesSettings PVP_DM_MoveAbilities_Mario
+{
+	MoveAbilitiesSettings MoveAbilities_Preset1 < uid=D6AA725759CD16D100000050A5A3C8A7 >
+	{
+		myMoveAbilityCategory Stomp
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_Stomp
+		myMoveAbilitiesParameters < uid=D6AA725759CD16D100000051A2B92B5F > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset2 < uid=D6AA725759CD16D1000000529F498F60 >
+	{
+		myMoveAbilityCategory Stomp
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_Stomp
+		myMoveAbilitiesParameters < uid=D6AA725759CD16D100000053284BB6EF > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset3 < uid=D6AA725759CD16D1000000549316A5B1 >
+	{
+		myMoveAbilityCategory Stomp
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_Stomp
+		myMoveAbilitiesParameters < uid=D6AA725759CD16D100000055F89E875F > = PVP_DM_MoveAbilitiesParameters
+	}
+}
+

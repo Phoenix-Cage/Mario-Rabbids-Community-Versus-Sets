@@ -1,0 +1,12 @@
+include ./deployablefighter_luigi.mfightersettings
+include "moria/game system data/juice/fighter/params/pvp_ranksparameters_luigi_deployable.juice"
+include "moria/game system data/juice/movesettings/pvp_moveabilities_deployable.juice"
+include moria/assets/weaponsettings/pvp_dm_luigi_deployableweapons.mweaponsettings
+
+FighterSettings PVP_DM_DeployableFighter_Luigi : DeployableFighter_Luigi
+{
+	myRanks = PVP_DM_Ranks_DeployableFighter_Luigi
+	myMoveAbilitiesSettings = PVP_DM_MoveAbilities_Deployable_Luigi
+	mySecondaryWeaponList = PVP_DM_Deployable_Weapons_Luigi
+}
+

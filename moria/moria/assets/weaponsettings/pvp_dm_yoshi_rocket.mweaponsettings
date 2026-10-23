@@ -1,0 +1,127 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_rocket.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_rocket.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_rocket.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+
+ListWeaponSettings PVP_DM_Yoshi_Rockets
+{
+	WeaponSettings Yoshi_Rocket_Preset1
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_rocket_yoshi_05.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Yoshi_Rocket_5
+		myWeaponCategory Rocket
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Rocket
+		myAttackParameters < uid=8297F7EA59D4E3640000042F8D2573F7 > : AttackParameters_Rocket
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Freeze
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4E364000004306640B6C3 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4E36400000431383C8F01 > = BulletParameters_Rocket
+		myVersionInfoConditions < uid=8297F7EA59D4E36400000432C61D7DEC > = VER_Retail
+	}
+	WeaponSettings Yoshi_Rocket_Preset2
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_rocket_yoshi_03.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Yoshi_Rocket_2
+		myWeaponCategory Rocket
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Rocket
+		myAttackParameters < uid=8297F7EA59D64DDF000000639F70A190 > : AttackParameters_Rocket
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Ink
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64DDF00000064A4E9F516 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64DDF00000065CD8A0EB3 > = BulletParameters_Rocket
+		myVersionInfoConditions < uid=8297F7EA59D64DDF0000006689906837 > = VER_Retail
+	}
+	WeaponSettings Yoshi_Rocket_Preset3
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_rocket_yoshi_07.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Yoshi_Rocket_7
+		myWeaponCategory Rocket
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Rocket
+		myAttackParameters < uid=8297F7EA59D64DDF0000006793F624B4 > : AttackParameters_Rocket
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Freeze
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64DDF00000068785C3299 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64DDF00000069E53E54B7 > = BulletParameters_Rocket
+		myVersionInfoConditions < uid=8297F7EA59D64DDF0000006AEFE549F7 > = VER_Retail
+	}
+    WeaponSettings Yoshi_Rocket_Preset4
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_rocket_yoshi_07.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Yoshi_Rocket_7
+		myWeaponCategory Rocket
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Rocket
+		myAttackParameters < uid=8297F7EA59D64DDF0000006793F624B4 > : AttackParameters_Rocket
+		{
+			myDamageBase 25
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Burn
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64DDF00000068785C3299 > = ADV_Sentry_DamageMod
+		myBulletParameters < uid=8297F7EA59D64DDF00000069E53E54B7 > = BulletParameters_Rocket
+		myVersionInfoConditions < uid=8297F7EA59D64DDF0000006AEFE549F7 > = VER_Retail
+	}
+}
+

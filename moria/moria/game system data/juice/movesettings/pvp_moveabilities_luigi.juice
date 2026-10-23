@@ -1,0 +1,104 @@
+include "moria/game system data/fruit/movesettings/movesettings.fruit"
+include ./params/moveabilitiesparameters_luigi.juice
+include "moria/game system data/juice/ui/descriptors/moveabilitiesdescriptors.juice"
+
+MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters < uid=8297F7EA59D4EFFE000004C3E39187C1 >
+{
+	myUsePipes TRUE
+	myUseSlide TRUE
+	myUseBarrel TRUE
+	myAom 13
+	myPipeAom 7
+	myIsDashable TRUE
+	myCanDash TRUE
+	myDashNumber 1
+	myExplosiveDashDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+	myCanAssistJump TRUE
+	myIsStompable TRUE
+	myCanTeamJump TRUE
+	myTeamJumpNumber 2
+	myTeamJumpRadius 13
+	myQuakeDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+}
+
+MoveAbilitiesParameters PVP_DM_MoveAbilitiesParameters_TechDemo < uid=8297F7EA59D4EFFE000004C3E39187C1 >
+{
+	myUsePipes TRUE        
+	myUseSlide TRUE                 
+	myUseSlopes TRUE 
+	myUseBarrel TRUE                        
+	myUseTrampoline TRUE                        
+	myUseVines TRUE
+	myVinesHeight 4.0	               
+	myAom 15
+	myAomEscape 99
+	myCanTeleport TRUE
+	myCanFly TRUE
+	myCanNavigateOnCharacters TRUE
+	myPipeAom 7
+	myIsDashable FALSE
+	myCanDash TRUE
+	myDashNumber 3
+	myExplosiveDashDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+	myCanAssistJump TRUE
+	myIsStompable FALSE
+	myCanTeamJump FALSE
+	myQuakeDamageCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 0, -0.270235 -0.002532, }, outTangents = { 0.333333 0, 0 0, }, properties = { 71, 1299, }, values = { 0 1, 1 0, }, }, numKeys = 2, }"
+	myCanLandingShot TRUE
+	myDashSideEffectType Stone
+	myNoCoverDamage TRUE
+}
+
+ListMoveAbilitiesSettings PVP_DM_MoveAbilities_Luigi
+{
+	MoveAbilitiesSettings MoveAbilities_Preset1 < uid=8297F7EA59D4ED4A000004BB72C247EA >
+	{
+		myMoveAbilityCategory DoubleJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_DoubleTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59D4ED4A000004BCA80B4FC5 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset2 < uid=8297F7EA59DC88650000001D4FBFCBB2 >
+	{
+		myMoveAbilityCategory DoubleJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_DoubleTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59DC88650000001EB88D99C7 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset3 < uid=8297F7EA59DC88650000001F5E59373D >
+	{
+		myMoveAbilityCategory DoubleJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_DoubleTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59DC886500000020473C4659 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset4 < uid=8297F7EA59D4ED4A000004BB72C247EA >
+	{
+		myMoveAbilityCategory DoubleJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_DoubleTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59D4ED4A000004BCA80B4FC5 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset5 < uid=8297F7EA59D4ED4A000004BB72C247EA >
+	{
+		myMoveAbilityCategory DoubleJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_DoubleTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59D4ED4A000004BCA80B4FC5 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset6 < uid=8297F7EA59D4ED4A000004BB72C247EA >
+	{
+		myMoveAbilityCategory DoubleJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_DoubleTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59D4ED4A000004BCA80B4FC5 > = PVP_DM_MoveAbilitiesParameters
+	}
+	MoveAbilitiesSettings MoveAbilities_Preset_TechDemo < uid=8297F7EA59D4ED4A000004BB72C247EA >
+	{
+		myMoveAbilityCategory DoubleJump
+		mySpecializationType TeamJump
+		myDescriptor = Descriptor_DoubleTeamJump
+		myMoveAbilitiesParameters < uid=8297F7EA59D4ED4A000004BCA80B4FC5 > = PVP_DM_MoveAbilitiesParameters_TechDemo
+	}
+}
+

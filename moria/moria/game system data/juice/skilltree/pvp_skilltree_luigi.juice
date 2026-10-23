@@ -1,0 +1,613 @@
+include ./skilltree_slot/skilltree_slotlist.juice
+include "moria/game system data/fruit/fighter/skilltree/skilltree.fruit"
+include "moria/game system data/juice/ui/descriptors/skilltreebonus.juice"
+include "moria/game system data/juice/ui/descriptors/skilltree/skilltreemetrics.juice"
+
+Skill PVP_DM_SKL_Luigi_Dash < uid=8297F7EA59D4F2BF000005266816F9EF >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Dash
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_dash.dds
+	}
+}
+
+Skill PVP_DM_SKL_Luigi_TeamJump < uid=8297F7EA59D4F2BF00000527CDC6C8EF >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJump
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_teamjump.dds
+	}
+}
+
+Skill PVP_DM_SKL_Luigi_Precision < uid=8297F7EA59D4F2BF00000528739D54B9 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Precision
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_wpnprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_Luigi_React < uid=8297F7EA59D4F2BF0000052974EB7DBE >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Luigi_React
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_techprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_Luigi_DoubleTeamJump < uid=8297F7EA59D4F2BF0000052AABED2B4D >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : MOVEMENT_SPECIALIZATION
+			{
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myDescriptor : Descriptor_SKL_DoubleTeamJump
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_Luigi_TeamJump.dds
+	}
+	myMetric = MovementSpecialization
+}
+
+Skill PVP_DM_SKL_Luigi_Deployable < uid=8297F7EA59D4F2BF0000052B50970F6F >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : SECONDARY_WEAPON
+			{
+			}
+			myCost 10
+			myPriority 0
+		}
+	}
+	myRequirements
+	{
+	}
+	myDescriptor : Descriptor_SKL_Deployable
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_wpnsec.dds
+	}
+	myMetric = SecondaryWeapon
+}
+
+Skill PVP_DM_SKL_Luigi_Marathoner < uid=8297F7EA59D4F2BF0000052CC936A158 >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus
+			{
+				mySecondaryTechniqueUnlocked TRUE
+			}
+			myCost 30
+			myPriority 0
+		}
+	}
+	myDescriptor : Descriptor_SKL_Marathoner
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_techsec.dds
+	}
+	myMetric = SecondaryTechnique
+}
+
+Skill PVP_DM_SKL_Luigi_Hp < uid=8297F7EA59D4F2BF0000052DE61F334D >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Hp
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_hp.dds
+	}
+	myMetric = HP
+}
+
+Skill PVP_DM_SKL_Luigi_Aom < uid=8297F7EA59D4F2BF00000531AFB4C8B2 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Aom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_aom.dds
+	}
+	myMetric = AOM
+}
+
+Skill PVP_DM_SKL_Luigi_PipeAom < uid=8297F7EA59D4F2BF00000535AA939B16 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_PipeAom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_pipe.dds
+	}
+	myMetric = PipeAOM
+}
+
+Skill PVP_DM_SKL_Luigi_DashDamage < uid=8297F7EA59D4F2BF000005395D4A2503 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 30.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 30.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 20.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_DashDamage
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_dash.dds
+	}
+	myMetric = DashDamage
+}
+
+Skill PVP_DM_SKL_Luigi_TeamJumpRadius < uid=8297F7EA59D4F2BF0000053B7226CE9C >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_Luigi_TeamJump.dds
+	}
+	myMetric = TeamJumpRadius
+}
+
+Skill PVP_DM_SKL_Luigi_TeamJumpCleanse < uid=8297F7EA59D4F2BF0000053DAFEC7646 >
+{
+	mySteps
+	{
+		Step 1
+		{
+			myBonus : TEAMJUMP_CLEANSE
+			{
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpCleanse
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_Luigi_TeamJump.dds
+	}
+	myMetric = TeamJumpCleanse
+}
+
+Skill PVP_DM_SKL_Luigi_Elevation < uid=8297F7EA59D4F2BF0000053FCD6E0F82 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset6
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset7
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 2.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Elevation
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_wpnprim.dds
+	}
+	myMetric = Elevation
+}
+
+Skill PVP_DM_SKL_Luigi_Atomized < uid=8297F7EA59D4F2BF00000541B32416AC >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Atomizer
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_luigi_doublewpn.dds
+	}
+	myMetric = Atomized
+}
+
+Skill PVP_DM_SKL_Luigi_ReactNumber < uid=8297F7EA59D4F2BF0000054344A9E0F0 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 1
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 1
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 2
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 1
+			}
+		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 1
+			}
+		}
+		Step Preset6
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 2
+			}
+		}
+		Step Preset7
+		{
+			myBonus
+			{
+				myPrimary_TechniqueNumber 999
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Luigi_ReactNumber
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_techprim.dds
+	}
+	myMetric = PrimaryTechniqueNumber
+}
+
+Skill PVP_DM_SKL_Luigi_ReactDamage < uid=8297F7EA59D4F2BF0000054518D8734F >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 0.5
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 0.3
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 0.5
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Luigi_ReactDamage
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_techprim.dds
+	}
+	myMetric = PrimaryTechniqueDamage
+}
+
+Skill PVP_DM_SKL_Luigi_ReactCooldown < uid=8297F7EA59D4F2BF00000547DD27AAC3 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 3
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 1
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Luigi_ReactCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_techprim.dds
+	}
+	myMetric = PrimaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_Luigi_MarathonerCooldown < uid=8297F7EA59D4F2BF000005495914E869 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 2
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 1
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Luigi_MarathonerCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_techsec.dds
+	}
+	myMetric = SecondaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_Luigi_MarathonerRadius < uid=8297F7EA59D4F2BF0000054B7C36234B >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Luigi_MarathonerRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_techsec.dds
+	}
+	myMetric = SecondaryTechniqueRadius
+}
+
+Skill PVP_DM_SKL_Luigi_MarathonerIncrement < uid=8297F7EA59D4F2BF0000054D6D769E52 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myMaratonerArea 4.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myMaratonerArea 4.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myMaratonerArea 8.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Luigi_MarathonerIncrement
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_luigi_techsec.dds
+	}
+	myMetric = MarathonerArea
+}
+
+SkillTree PVP_DM_Skilltree_Luigi
+{
+	myEXTRA
+	{
+		Skill PVP_DM_SKL_Luigi_Hp < uid=8297F7EA59D4F2BF0000054F030E643C > = PVP_DM_SKL_Luigi_Hp
+		Skill PVP_DM_SKL_Luigi_Aom < uid=8297F7EA59D4F2BF000005506B661FC6 > = PVP_DM_SKL_Luigi_Aom
+		Skill PVP_DM_SKL_Luigi_PipeAom < uid=8297F7EA59D4F2BF00000551B23B98F6 > = PVP_DM_SKL_Luigi_PipeAom
+	}
+	myMOVEMENT
+	{
+		Skill PVP_DM_SKL_Luigi_Dash < uid=8297F7EA59D4F2BF00000552053595C2 > = PVP_DM_SKL_Luigi_Dash
+		Skill PVP_DM_SKL_Luigi_TeamJump < uid=8297F7EA59D4F2BF00000553756A3EDC > = PVP_DM_SKL_Luigi_TeamJump
+		Skill PVP_DM_SKL_Luigi_DoubleTeamJump < uid=8297F7EA59D4F2BF000005542EA98798 > = PVP_DM_SKL_Luigi_DoubleTeamJump
+		Skill PVP_DM_SKL_Luigi_DashDamage < uid=8297F7EA59D4F2BF00000555403B5693 > = PVP_DM_SKL_Luigi_DashDamage
+		Skill PVP_DM_SKL_Luigi_TeamJumpRadius < uid=8297F7EA59D4F2BF00000556E90940D3 > = PVP_DM_SKL_Luigi_TeamJumpRadius
+		Skill PVP_DM_SKL_Luigi_TeamJumpCleanse < uid=8297F7EA59D4F2BF00000557CDB11FF0 > = PVP_DM_SKL_Luigi_TeamJumpCleanse
+	}
+	myATTACK
+	{
+		Skill PVP_DM_SKL_Luigi_Precision < uid=8297F7EA59D4F2BF00000558AF46D499 > = PVP_DM_SKL_Luigi_Precision
+		Skill PVP_DM_SKL_Luigi_Deployable < uid=8297F7EA59D4F2BF000005593553802C > = PVP_DM_SKL_Luigi_Deployable
+		Skill PVP_DM_SKL_Luigi_Elevation < uid=8297F7EA59D4F2BF0000055A96FF518D > = PVP_DM_SKL_Luigi_Elevation
+		Skill PVP_DM_SKL_Luigi_Atomized < uid=8297F7EA59D4F2BF0000055BD3F4923D > = PVP_DM_SKL_Luigi_Atomized
+	}
+	myTECHNIQUE
+	{
+		Skill PVP_DM_SKL_Luigi_React < uid=8297F7EA59D4F2BF0000055C4A8F76C6 > = PVP_DM_SKL_Luigi_React
+		Skill PVP_DM_SKL_Luigi_Marathoner < uid=8297F7EA59D4F2BF0000055DE374CD5B > = PVP_DM_SKL_Luigi_Marathoner
+		Skill PVP_DM_SKL_Luigi_ReactNumber < uid=8297F7EA59D4F2BF0000055E8F6B9B81 > = PVP_DM_SKL_Luigi_ReactNumber
+		Skill PVP_DM_SKL_Luigi_ReactDamage < uid=8297F7EA59D4F2BF0000055FF879952B > = PVP_DM_SKL_Luigi_ReactDamage
+		Skill PVP_DM_SKL_Luigi_ReactCooldown < uid=8297F7EA59D4F2BF00000560C971F5A4 > = PVP_DM_SKL_Luigi_ReactCooldown
+		Skill PVP_DM_SKL_Luigi_MarathonerCooldown < uid=8297F7EA59D4F2BF000005618C2AE7C4 > = PVP_DM_SKL_Luigi_MarathonerCooldown
+		Skill PVP_DM_SKL_Luigi_MarathonerRadius < uid=8297F7EA59D4F2BF000005625F4ED253 > = PVP_DM_SKL_Luigi_MarathonerRadius
+		Skill PVP_DM_SKL_Luigi_MarathonerArea < uid=8297F7EA59D4F2BF000005636BAAC45C > = PVP_DM_SKL_Luigi_MarathonerIncrement
+	}
+	myUseCumulativeSkillBonus FALSE
+}
+

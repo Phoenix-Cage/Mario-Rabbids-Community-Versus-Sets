@@ -1,0 +1,22 @@
+include ./peach.mfightersettings
+include "moria/game system data/juice/fighter/params/pvp_ranksparameters_peach.juice"
+include "moria/game system data/juice/movesettings/pvp_moveabilities_peach.juice"
+include moria/assets/weaponsettings/pvp_dm_peach_shotgun.mweaponsettings
+include moria/assets/weaponsettings/pvp_dm_peach_grenade.mweaponsettings
+include "moria/game system data/juice/techniquesettings/pvp_peach_react.juice"
+include "moria/game system data/juice/techniquesettings/pvp_peach_protect.juice"
+include "moria/game system data/juice/skilltree/pvp_skilltree_peach.juice"
+
+FighterSettings PVP_DM_Peach : Peach
+{
+	myRanks = PVP_DM_Ranks_Peach
+	myMoveAbilitiesSettings = PVP_DM_MoveAbilities_Peach
+	myPrimaryWeaponList = PVP_DM_Peach_Shotguns
+	mySecondaryWeaponList = PVP_DM_Peach_Grenades
+	myPrimaryTechnique = PVP_DM_Peach_React
+	mySecondaryTechnique = PVP_DM_Peach_Protect
+	myPositioningConditions < uid=D6AA72575A042292000000240E835F76 > = Positioning_PVP_DM
+	myUISettings = UI_PVP_DM_Peach
+	mySkillTree = PVP_DM_Skilltree_Peach
+}
+
