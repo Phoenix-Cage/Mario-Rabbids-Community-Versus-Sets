@@ -1,0 +1,127 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_powergun.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_powergun.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_powergun.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+
+ListWeaponSettings PVP_DM_Yoshi_Powerguns
+{
+	WeaponSettings Yoshi_Powergun_Preset1
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_powergun_yoshi_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Yoshi_Powergun_3
+		myWeaponCategory PowerGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Powergun
+		myAttackParameters < uid=8297F7EA59D4E2F1000003F37B78169B > : AttackParameters_PowerGun
+		{
+			myDamageBase 40
+			myDamageMin -30
+			myDamageMax 30
+			myHitChance 80.0
+			mySuperChance 20.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Ink
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D4E2F1000003F4842FE5B5 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D4E2F1000003F57E4D101F > = BulletParameters_Powergun
+		myVersionInfoConditions < uid=8297F7EA59D4E2F1000003F6B876BA36 > = VER_Retail
+	}
+	WeaponSettings Yoshi_Powergun_Preset2
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_powergun_yoshi_06.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Yoshi_Powergun_6
+		myWeaponCategory PowerGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Powergun
+		myAttackParameters < uid=8297F7EA59D64D3B0000005BB947099C > : AttackParameters_PowerGun
+		{
+			myDamageBase 40
+			myDamageMin -30
+			myDamageMax 30
+			myHitChance 80.0
+			mySuperChance 20.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Freeze
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64D3B0000005CC24AF4E6 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64D3B0000005D0480458C > = BulletParameters_Powergun
+		myVersionInfoConditions < uid=8297F7EA59D64D3B0000005E5B3C56EB > = VER_Retail
+	}
+	WeaponSettings Yoshi_Powergun_Preset3
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_powergun_yoshi_12.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Yoshi_Powergun_11
+		myWeaponCategory PowerGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Powergun
+		myAttackParameters < uid=8297F7EA59D64D3B0000005FDAB6BFF9 > : AttackParameters_PowerGun
+		{
+			myDamageBase 40
+			myDamageMin -30
+			myDamageMax 30
+			myHitChance 80.0
+			mySuperChance 20.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Ink
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64D3B000000604FCE8D8D > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D64D3B0000006149640DDD > = BulletParameters_Powergun
+		myVersionInfoConditions < uid=8297F7EA59D64D3B00000062F0568114 > = VER_Retail
+	}
+    WeaponSettings Yoshi_Powergun_Preset4
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_powergun_yoshi_12.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Yoshi_Powergun_11
+		myWeaponCategory PowerGun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Powergun
+		myAttackParameters < uid=8297F7EA59D64D3B0000005FDAB6BFF9 > : AttackParameters_PowerGun
+		{
+			myDamageBase 40
+			myDamageMin -30
+			myDamageMax 30
+			myHitChance 80.0
+			mySuperChance 20.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Burn
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D64D3B000000604FCE8D8D > = ADV_Sentry_DamageMod
+		myBulletParameters < uid=8297F7EA59D64D3B0000006149640DDD > = BulletParameters_Powergun
+		myVersionInfoConditions < uid=8297F7EA59D64D3B00000062F0568114 > = VER_Retail
+	}
+}
+

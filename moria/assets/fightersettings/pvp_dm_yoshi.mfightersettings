@@ -1,0 +1,22 @@
+include ./yoshi.mfightersettings
+include "moria/game system data/juice/fighter/params/pvp_ranksparameters_yoshi.juice"
+include "moria/game system data/juice/movesettings/pvp_moveabilities_yoshi.juice"
+include moria/assets/weaponsettings/pvp_dm_yoshi_powergun.mweaponsettings
+include moria/assets/weaponsettings/pvp_dm_yoshi_rocket.mweaponsettings
+include "moria/game system data/juice/techniquesettings/pvp_yoshi_react.juice"
+include "moria/game system data/juice/techniquesettings/pvp_yoshi_luckyshot.juice"
+include "moria/game system data/juice/skilltree/pvp_skilltree_yoshi.juice"
+
+FighterSettings PVP_DM_Yoshi : Yoshi
+{
+	myRanks = PVP_DM_Ranks_Yoshi
+	myMoveAbilitiesSettings = PVP_DM_MoveAbilities_Yoshi
+	myPrimaryWeaponList = PVP_DM_Yoshi_Powerguns
+	mySecondaryWeaponList = PVP_DM_Yoshi_Rockets
+	myPrimaryTechnique = PVP_DM_Yoshi_React
+	mySecondaryTechnique = PVP_DM_Yoshi_LuckyShot
+	myPositioningConditions < uid=D6AA72575A0422B500000026E7DA0CFD > = Positioning_PVP_DM
+	myUISettings = UI_PVP_DM_Yoshi
+	mySkillTree = PVP_DM_Skilltree_Yoshi
+}
+

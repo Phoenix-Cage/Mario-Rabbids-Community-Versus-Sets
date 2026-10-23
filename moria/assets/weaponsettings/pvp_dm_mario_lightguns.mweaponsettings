@@ -1,0 +1,99 @@
+include "moria/game system data/juice/weaponsettings/weaponsettings_includes.juice"
+include "moria/game system data/juice/weaponsettings/params/bulletparameters_lightgun.juice"
+include "moria/game system data/juice/weaponsettings/params/attackparameters_lightgun.juice"
+include "moria/game system data/juice/weaponsettings/params/weaponbonuses.juice"
+include "moria/game system data/juice/ui/descriptors/weaponsdescriptors.juice"
+include "moria/game system data/juice/weaponsettings/params/attacklevels_lightgun.juice"
+include "moria/game system data/juice/currency/prices.juice"
+include "moria/game system data/juice/weaponsettings/advantages/advantages.juice"
+include "moria/game system data/juice/ui/descriptors/weaponunlockdescriptors.juice"
+include "moria/game system data/juice/displayingcondition/versioninfo_conditions_list.juice"
+
+ListWeaponSettings PVP_DM_Mario_Lightguns
+{
+	WeaponSettings Mario_Lightgun_Preset1
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_lightgun_mario_03.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Mario_Lightgun_4
+		myWeaponCategory Lightgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Lightgun
+		myAttackParameters < uid=D6AA725759CD22DC000000BE56CD324F > : AttackParameters_Lightgun
+		{
+			myDamageBase 35
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Honey
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=D6AA725759CD22DC000000BF441FF4B2 > = NULLREFERENCE
+		myBulletParameters < uid=D6AA725759CD22DC000000C0A2EE17D1 > = BulletParameters_Lightgun
+		myVersionInfoConditions < uid=D6AA725759CD22DC000000C177DA7B7E > = VER_Retail
+	}
+	WeaponSettings Mario_Lightgun_Preset2
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_lightgun_mario_11.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Mario_Lightgun_9
+		myWeaponCategory Lightgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Lightgun
+		myAttackParameters < uid=8297F7EA59D62AED000000D84216D102 > : AttackParameters_Lightgun
+		{
+			myDamageBase 35
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 70.0
+			mySuperChance 30.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Bounce
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D62AED000000D9469E0B69 > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D62AED000000DA30397183 > = BulletParameters_Lightgun
+		myVersionInfoConditions < uid=8297F7EA59D62AED000000DB10DE1C99 > = VER_Retail
+	}
+	WeaponSettings Mario_Lightgun_Preset3
+	{
+		myGraphObject "moria/graph objects/weapon/wpn_lightgun_mario_02.mgraphobject"
+		myEquipmentDescriptor = Descriptor_Mario_Lightgun_3
+		myWeaponCategory Lightgun
+		myUnlockState Owned
+		myUnlockDescriptor = NULLREFERENCE
+		myPrice
+		{
+			myCurrencyAmount 0
+		}
+		myAttackLevels = AttackLevels_Lightgun
+		myAttackParameters < uid=8297F7EA59D62B2A000000DCE4B44141 > : AttackParameters_Lightgun
+		{
+			myDamageBase 35
+			myDamageMin -5
+			myDamageMax 5
+			myHitChance 50.0
+			mySuperChance 50.0
+			mySuperDamageMod 0.2
+		}
+		myBonus1 = SideEffect_Honey
+		myBonus2 = NULLREFERENCE
+		myBonus3 = NULLREFERENCE
+		myAdvantage < uid=8297F7EA59D62B2A000000DD52C7DBFD > = NULLREFERENCE
+		myBulletParameters < uid=8297F7EA59D62B2A000000DEA9890D4F > = BulletParameters_Lightgun
+		myVersionInfoConditions < uid=8297F7EA59D62B2A000000DF4953F633 > = VER_Retail
+	}
+}
+

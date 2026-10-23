@@ -1,0 +1,22 @@
+include ./rabbidspeach.mfightersettings
+include "moria/game system data/juice/fighter/params/pvp_ranksparameters_rabbidspeach.juice"
+include "moria/game system data/juice/movesettings/pvp_moveabilities_rabbidspeach.juice"
+include moria/assets/weaponsettings/pvp_dm_rabbidspeach_lightgun.mweaponsettings
+include "moria/game system data/juice/techniquesettings/pvp_rabbidspeach_shield.juice"
+include "moria/game system data/juice/techniquesettings/pvp_rabbidspeach_healall.juice"
+include "moria/game system data/juice/skilltree/pvp_skilltree_rabbidpeach.juice"
+include moria/assets/weaponsettings/pvp_dm_rabbidspeach_deployables.mweaponsettings
+
+FighterSettings PVP_DM_RabbidsPeach : RabbidsPeach
+{
+	myRanks = PVP_DM_Ranks_RabbidsPeach
+	myMoveAbilitiesSettings = PVP_DM_MoveAbilities_RabbidsPeach
+	myPrimaryWeaponList = PVP_DM_RabbidsPeach_Lightguns
+	mySecondaryWeaponList = PVP_DM_RabbidsPeach_Deployables
+	myPrimaryTechnique = PVP_DM_RabbidsPeach_Shield
+	mySecondaryTechnique = PVP_DM_RabbidsPeach_HealAll
+	myPositioningConditions < uid=D6AA72575A04226700000022C6E1A638 > = Positioning_PVP_DM
+	myUISettings = UI_PVP_DM_RabbidsPeach
+	mySkillTree = PVP_DM_Skilltree_RabbidPeach
+}
+

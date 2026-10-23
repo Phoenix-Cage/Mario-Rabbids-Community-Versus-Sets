@@ -1,0 +1,24 @@
+include "moria/game system data/fruit/fighter/params/ranksparameters.fruit"
+
+RanksParameters PVP_DM_Rank_Preset1 < uid=8297F7EA59D497A400000009AAAC6473 >
+{
+	myHealthPoints 150
+}
+
+RanksParameters PVP_DM_Rank_Preset2 < uid=8297F7EA59D49A250000001AD535AFDD >
+{
+	myHealthPoints 150
+}
+
+RanksParameters PVP_DM_Rank_Preset3 < uid=8297F7EA59D49A250000001BF350FCFC >
+{
+	myHealthPoints 150
+}
+
+Ranks PVP_DM_Ranks_RabbidsLuigi
+{
+	RanksParameters PVP_DM_Rank_Preset1 < uid=8297F7EA59D497A40000000F0D0B551C > = PVP_DM_Rank_Preset1
+	RanksParameters PVP_DM_Rank_Preset2 < uid=8297F7EA59D49854000000179D57628D > = PVP_DM_Rank_Preset2
+	RanksParameters PVP_DM_Rank_Preset3 < uid=8297F7EA59D49854000000180F94D262 > = PVP_DM_Rank_Preset3
+}
+

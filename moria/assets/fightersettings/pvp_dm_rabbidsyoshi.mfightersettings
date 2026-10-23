@@ -1,0 +1,22 @@
+include ./rabbidsyoshi.mfightersettings
+include "moria/game system data/juice/fighter/params/pvp_ranksparameters_rabbidsyoshi.juice"
+include "moria/game system data/juice/movesettings/pvp_moveabilities_rabbidsyoshi.juice"
+include moria/assets/weaponsettings/pvp_dm_rabbidsyoshi_powergun.mweaponsettings
+include moria/assets/weaponsettings/pvp_dm_rabbidsyoshi_grenade.mweaponsettings
+include "moria/game system data/juice/techniquesettings/pvp_rabbidsyoshi_shield.juice"
+include "moria/game system data/juice/techniquesettings/pvp_rabbidsyoshi_rabbidscream.juice"
+include "moria/game system data/juice/skilltree/pvp_skilltree_rabbidyoshi.juice"
+
+FighterSettings PVP_DM_RabbidsYoshi : RabbidsYoshi
+{
+	myRanks = PVP_DM_Ranks_RabbidsYoshi
+	myMoveAbilitiesSettings = PVP_DM_MoveAbilities_RabbidsYoshi
+	myPrimaryWeaponList = PVP_DM_RabbidsYoshi_Powerguns
+	mySecondaryWeaponList = PVP_DM_RabbidsYoshi_Grenades
+	myPrimaryTechnique = PVP_DM_RabbidsYoshi_Shield
+	mySecondaryTechnique = PVP_DM_RabbidsYoshi_RabbidScream
+	myPositioningConditions < uid=D6AA72575A0422C400000027228B8815 > = Positioning_PVP_DM
+	myUISettings = UI_PVP_DM_RabbidsYoshi
+	mySkillTree = PVP_DM_Skilltree_RabbidYoshi
+}
+

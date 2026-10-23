@@ -1,0 +1,687 @@
+include ./skilltree_slot/skilltree_slotlist.juice
+include "moria/game system data/fruit/fighter/skilltree/skilltree.fruit"
+include "moria/game system data/juice/ui/descriptors/skilltreebonus.juice"
+include "moria/game system data/juice/ui/descriptors/skilltree/skilltreemetrics.juice"
+
+Skill PVP_DM_SKL_Peach_Dash < uid=8297F7EA59D4D001000002BECB9259AD >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Dash
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_dash.dds
+	}
+}
+
+Skill PVP_DM_SKL_Peach_TeamJump < uid=8297F7EA59D4D001000002BFC3A8938A >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJump
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_teamjump.dds
+	}
+}
+
+Skill PVP_DM_SKL_Peach_Shotgun < uid=8297F7EA59D4D001000002C07AE4F615 >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Shotgun
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_wpnprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_Peach_React < uid=8297F7EA59D4D001000002C1B069D3EF >
+{
+	mySteps
+	{
+		Step Empty
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Peach_React
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_techprim.dds
+	}
+}
+
+Skill PVP_DM_SKL_Peach_TeamJumpLove < uid=8297F7EA59D4D001000002C2E96FAB7E >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : MOVEMENT_SPECIALIZATION
+			{
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpLove
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_Peach_LoveJump.dds
+	}
+	myMetric = MovementSpecialization
+}
+
+Skill PVP_DM_SKL_Peach_Grenade < uid=8297F7EA59D4D001000002C36EDC411A >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus : SECONDARY_WEAPON
+			{
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myRequirements
+	{
+	}
+	myDescriptor : Descriptor_SKL_Grenade
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_wpnsec.dds
+	}
+	myMetric = SecondaryWeapon
+}
+
+Skill PVP_DM_SKL_Peach_Protect < uid=8297F7EA59D4D001000002C433D5468A >
+{
+	mySteps
+	{
+		Step Unlock
+		{
+			myBonus
+			{
+				mySecondaryTechniqueUnlocked TRUE
+			}
+			myCost 20
+			myPriority 0
+		}
+	}
+	myDescriptor : Descriptor_SKL_Protect
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_techsec.dds
+	}
+	myMetric = SecondaryTechnique
+}
+
+Skill PVP_DM_SKL_Peach_Hp < uid=8297F7EA59D4D001000002C5CDDD1DB4 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Hp
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_hp.dds
+	}
+	myMetric = HP
+}
+
+Skill PVP_DM_SKL_Peach_Aom < uid=8297F7EA59D4D001000002C969484C34 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Aom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_aom.dds
+	}
+	myMetric = AOM
+}
+
+Skill PVP_DM_SKL_Peach_PipeAom < uid=8297F7EA59D4D001000002CDAE93A8ED >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_PipeAom
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_pipe.dds
+	}
+	myMetric = PipeAOM
+}
+
+Skill PVP_DM_SKL_Peach_DashDamage < uid=8297F7EA59D4D001000002D1C5990F0B >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 20.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 20.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myDashDamageAbsolute 20.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_DashDamage
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_dash.dds
+	}
+	myMetric = DashDamage
+}
+
+Skill PVP_DM_SKL_Peach_TeamJumpRadius < uid=8297F7EA59D4D001000002D376CA5CC0 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_Peach_LoveJump.dds
+	}
+	myMetric = TeamJumpRadius
+}
+
+Skill PVP_DM_SKL_Peach_TeamJumpCleanse < uid=8297F7EA59D4D001000002D57D71F6F2 >
+{
+	mySteps
+	{
+		Step 1
+		{
+			myBonus : TEAMJUMP_CLEANSE
+			{
+			}
+			myCost 10
+			myPriority 1
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpCleanse
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_peach_cleans.dds
+	}
+	myMetric = TeamJumpCleanse
+}
+
+Skill PVP_DM_SKL_Peach_TeamJumpLoveRadius < uid=8297F7EA59D4D001000002D78793076D >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myLoveJumpRadius 5.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myLoveJumpRadius 1.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myLoveJumpRadius 5.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpLoveRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_Peach_LoveJump.dds
+	}
+	myMetric = TeamJumpLoveRadius
+}
+
+Skill PVP_DM_SKL_Peach_TeamJumpLoveHeal < uid=8297F7EA59D4D001000002D9EFD5FAAC >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myLoveJumpHealing 0.15
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myLoveJumpHealing 0.2
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myLoveJumpHealing 0.05
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myLoveJumpHealing 0.15
+			}
+		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myLoveJumpHealing 0.2
+			}
+		}
+		Step Preset6
+		{
+			myBonus
+			{
+				myLoveJumpHealing 0.05
+			}
+		}
+		Step Preset7
+		{
+			myBonus
+			{
+				myLoveJumpHealing 0.25
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_TeamJumpLoveHeal
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_Peach_LoveJump.dds
+	}
+	myMetric = TeamJumpLoveHeal
+}
+
+Skill PVP_DM_SKL_Peach_Elevation < uid=8297F7EA59D4D001000002DB889DC640 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myElevationFactorActive TRUE
+				myElevationFactor 0.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Elevation
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_peach_doublewpn.dds
+	}
+	myMetric = Elevation
+}
+
+Skill PVP_DM_SKL_Peach_Atomized < uid=8297F7EA59D4D001000002DDDFE70A6C >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+		}
+		Step Preset2
+		{
+		}
+		Step Preset3
+		{
+		}
+	}
+	myDescriptor : Descriptor_SKL_Atomizer
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreeicon_peach_doublewpn.dds
+	}
+	myMetric = Atomized
+}
+
+Skill PVP_DM_SKL_Peach_ReactDamage < uid=8297F7EA59D4D001000002DF7E5EE788 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 1.0
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 0.3
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 1.0
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 1.0
+			}
+		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 0.3
+			}
+		}
+		Step Preset6
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 1.0
+			}
+		}
+		Step Preset7
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 1.0
+			}
+		}
+		Step Preset8
+		{
+			myBonus
+			{
+				myPrimary_TechniqueDamage 0.0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Peach_ReactDamage
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_techprim.dds
+	}
+	myMetric = PrimaryTechniqueDamage
+}
+
+Skill PVP_DM_SKL_Peach_ReactCooldown < uid=8297F7EA59D4D001000002E13A1464B0 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 1
+			}
+		}
+		Step Preset4
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset5
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset6
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 1
+			}
+		}
+		Step Preset7
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 2
+			}
+		}
+		Step Preset8
+		{
+			myBonus
+			{
+				myPrimary_TechniqueCooldown 0
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Peach_ReactCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_techprim.dds
+	}
+	myMetric = PrimaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_Peach_ProtectCooldown < uid=8297F7EA59D4D001000002E317A42765 >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 2
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 1
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueCooldown 3
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Peach_ProtectCooldown
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_techsec.dds
+	}
+	myMetric = SecondaryTechniqueCooldown
+}
+
+Skill PVP_DM_SKL_Peach_ProtectRadius < uid=8297F7EA59D4D001000002E56EA3F06B >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				mySecondary_TechniqueRadius 21
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Peach_ProtectRadius
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_techsec.dds
+	}
+	myMetric = SecondaryTechniqueRadius
+}
+
+Skill PVP_DM_SKL_Peach_ProtectIncrement < uid=8297F7EA59D4D001000002E7B928564F >
+{
+	mySteps
+	{
+		Step Preset1
+		{
+			myBonus
+			{
+				myProtectDamage 0.3
+			}
+		}
+		Step Preset2
+		{
+			myBonus
+			{
+				myProtectDamage 0.8
+			}
+		}
+		Step Preset3
+		{
+			myBonus
+			{
+				myProtectDamage 0.3
+			}
+		}
+	}
+	myDescriptor : Descriptor_SKL_Peach_ProtectIncrement
+	{
+		mySkillPicture moria/baked/art/ui/rabbolatory/warmaster/skill_tree/ui_warmaster_skilltreescreen_peach_techsec.dds
+	}
+	myMetric = ProtectPercentage
+}
+
+SkillTree PVP_DM_Skilltree_Peach
+{
+	myEXTRA
+	{
+		Skill PVP_DM_SKL_Peach_Hp < uid=8297F7EA59D4D001000002E96602D556 > = PVP_DM_SKL_Peach_Hp
+		Skill PVP_DM_SKL_Peach_Aom < uid=8297F7EA59D4D001000002EAE7BC993C > = PVP_DM_SKL_Peach_Aom
+		Skill PVP_DM_SKL_Peach_PipeAom < uid=8297F7EA59D4D001000002EB1CDD31AA > = PVP_DM_SKL_Peach_PipeAom
+	}
+	myMOVEMENT
+	{
+		Skill PVP_DM_SKL_Peach_Dash < uid=8297F7EA59D4D001000002EC91F83DE9 > = PVP_DM_SKL_Peach_Dash
+		Skill PVP_DM_SKL_Peach_TeamJump < uid=8297F7EA59D4D001000002EDE120E2E5 > = PVP_DM_SKL_Peach_TeamJump
+		Skill PVP_DM_SKL_Peach_TeamJumpLove < uid=8297F7EA59D4D001000002EEE256F284 > = PVP_DM_SKL_Peach_TeamJumpLove
+		Skill PVP_DM_SKL_Peach_DashDamage < uid=8297F7EA59D4D001000002EF17F3DF05 > = PVP_DM_SKL_Peach_DashDamage
+		Skill PVP_DM_SKL_Peach_TeamJumpRadius < uid=8297F7EA59D4D001000002F047B4BF67 > = PVP_DM_SKL_Peach_TeamJumpRadius
+		Skill PVP_DM_SKL_Peach_TeamJumpCleanse < uid=8297F7EA59D4D001000002F1A1654ABE > = PVP_DM_SKL_Peach_TeamJumpCleanse
+		Skill PVP_DM_SKL_Peach_TeamJumpLoveRadius < uid=8297F7EA59D4D001000002F2F4F24EC4 > = PVP_DM_SKL_Peach_TeamJumpLoveRadius
+		Skill PVP_DM_SKL_Peach_TeamJumpLoveHeal < uid=8297F7EA59D4D001000002F37D70ACA8 > = PVP_DM_SKL_Peach_TeamJumpLoveHeal
+	}
+	myATTACK
+	{
+		Skill PVP_DM_SKL_Peach_Shotgun < uid=8297F7EA59D4D001000002F49FDD6BE6 > = PVP_DM_SKL_Peach_Shotgun
+		Skill PVP_DM_SKL_Peach_Grenade < uid=8297F7EA59D4D001000002F51466F219 > = PVP_DM_SKL_Peach_Grenade
+		Skill PVP_DM_SKL_Peach_Elevation < uid=8297F7EA59D4D001000002F672841A3F > = PVP_DM_SKL_Peach_Elevation
+		Skill PVP_DM_SKL_Peach_Atomized < uid=8297F7EA59D4D001000002F78A69ED2B > = PVP_DM_SKL_Peach_Atomized
+	}
+	myTECHNIQUE
+	{
+		Skill PVP_DM_SKL_Peach_React < uid=8297F7EA59D4D001000002F8FE9F25DB > = PVP_DM_SKL_Peach_React
+		Skill PVP_DM_SKL_Peach_Protect < uid=8297F7EA59D4D001000002F9DD4AF62B > = PVP_DM_SKL_Peach_Protect
+		Skill PVP_DM_SKL_Peach_ReactDamage < uid=8297F7EA59D4D001000002FA8F4D5A5F > = PVP_DM_SKL_Peach_ReactDamage
+		Skill PVP_DM_SKL_Peach_ReactCooldown < uid=8297F7EA59D4D001000002FB4A88FE28 > = PVP_DM_SKL_Peach_ReactCooldown
+		Skill PVP_DM_SKL_Peach_ProtectCooldown < uid=8297F7EA59D4D001000002FC4D3EBB5F > = PVP_DM_SKL_Peach_ProtectCooldown
+		Skill PVP_DM_SKL_Peach_ProtectRadius < uid=8297F7EA59D4D001000002FDC74FE77D > = PVP_DM_SKL_Peach_ProtectRadius
+		Skill PVP_DM_SKL_Peach_ProtectPercentage < uid=8297F7EA59D4D001000002FE2235C269 > = PVP_DM_SKL_Peach_ProtectIncrement
+	}
+	myUseCumulativeSkillBonus FALSE
+}
+
